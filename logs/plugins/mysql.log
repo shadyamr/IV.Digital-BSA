@@ -1,0 +1,314 @@
+[02:18:35] [WARNING] mysql_connect: no password specified (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:16 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:210)
+[02:18:50] [WARNING] mysql_connect: no password specified (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:16 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:210)
+[02:19:32] [WARNING] mysql_connect: no password specified (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:16 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:210)
+[02:19:32] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[02:20:18] [WARNING] mysql_connect: no password specified (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:16 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:210)
+[02:20:18] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[02:20:56] [DEBUG] mysql_format(1, 0x0187E090, 200, "SELECT * FROM `players` WHERE `Username` = '%e'") (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:33 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:241)
+[02:20:56] [DEBUG] CHandle::EscapeString(this=0x723880, src='Shady_Dev')
+[02:20:56] [DEBUG] CConnection::EscapeString(src='Shady_Dev', this=0x728128, connection=0x7304b8)
+[02:20:56] [DEBUG] CHandle::EscapeString - return value: true, escaped string: 'Shady_Dev'
+[02:20:56] [DEBUG] mysql_format: return value: '54' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:33 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:241)
+[02:20:56] [DEBUG] mysql_tquery(1, "SELECT * FROM `players` WHERE `Username` = 'Shady_Dev'", "CheckAccount", "d") (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:34 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:241)
+[02:20:56] [DEBUG] CCallback::Create(amx=0x17dc668, name='CheckAccount', format='d', params=0x187e078, param_offset=5)
+[02:20:56] [DEBUG] CCallback::Create - callback index for 'CheckAccount': 2
+[02:20:56] [DEBUG] processing specifier 'd' with parameter index 0
+[02:20:56] [DEBUG] retrieved and pushed value '0'
+[02:20:56] [INFO] Callback 'CheckAccount' set up for delayed execution.
+[02:20:56] [DEBUG] created delayed callback with 1 parameter
+[02:20:56] [DEBUG] CHandle::Execute(this=0x723880, type=1, query=0x7829a8)
+[02:20:56] [DEBUG] CConnection::Execute(query=0x7829a8, this=0x1d10020, connection=0x6f9f70)
+[02:20:56] [DEBUG] CQuery::Execute(this=0x7829a8, connection=0x6f9f70)
+[02:20:56] [INFO] query "SELECT * FROM `players` WHERE `Username` = 'Shady_Dev'" successfully executed within 0.481 milliseconds
+[02:20:56] [DEBUG] CResultSet::Create(connection=0x6f9f70, query_str='SELECT * FROM `players` WHERE `Username` = 'Shady_Dev'')
+[02:20:56] [DEBUG] created new resultset '0x76c188'
+[02:20:56] [DEBUG] fetched MySQL result '0x7761b0'
+[02:20:56] [DEBUG] allocated 0 bytes for PAWN result
+[02:20:56] [DEBUG] CHandle::Execute - return value: true
+[02:20:56] [DEBUG] mysql_tquery: return value: '1' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:34 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:241)
+[02:20:56] [DEBUG] CCallback::Execute(amx=0x17dc668, index=2, num_params=1)
+[02:20:56] [INFO] Executing callback 'CheckAccount' with 1 parameter...
+[02:20:56] [DEBUG] processing internal specifier 'c'
+[02:20:56] [DEBUG] pushed value '0' onto AMX stack
+[02:20:56] [DEBUG] executing AMX callback with index '2'
+[02:20:56] [DEBUG] cache_get_row_count(0x0187DF64) (E:\Shady\Scripting\TDZ\pawno\include\a_mysql.inc:182 -> ../gamemodes/assets/functions.tdz:3)
+[02:20:56] [DEBUG] cache_get_row_count: return value: '1' (E:\Shady\Scripting\TDZ\pawno\include\a_mysql.inc:182 -> ../gamemodes/assets/functions.tdz:3)
+[02:20:56] [DEBUG] AMX callback executed with error '0'
+[02:20:56] [INFO] Callback successfully executed.
+[02:21:01] [DEBUG] mysql_format(1, 0x0187DE80, 300, "INSERT INTO `players` (`Username`, `Password`, `IPAddress`, `Cash`, `Kills`, `Deaths`) VALUES ('%e', '%e', '%e', 0, 0, 0)") (../gamemodes/assets/functions.tdz:21)
+[02:21:01] [DEBUG] CHandle::EscapeString(this=0x723880, src='Shady_Dev')
+[02:21:02] [DEBUG] CConnection::EscapeString(src='Shady_Dev', this=0x728128, connection=0x7304b8)
+[02:21:02] [DEBUG] CHandle::EscapeString - return value: true, escaped string: 'Shady_Dev'
+[02:21:02] [DEBUG] CHandle::EscapeString(this=0x723880, src='$2y$12$KyroZRLDYSvkTErBSSDoT.b6kKOMy10lGkxRAcnUVKxShphPsQj2W')
+[02:21:02] [DEBUG] CConnection::EscapeString(src='$2y$12$KyroZRLDYSvkTErBSSDoT.b6kKOMy10lGkxRAcnUVKxShphPsQj2W', this=0x728128, connection=0x7304b8)
+[02:21:02] [DEBUG] CHandle::EscapeString - return value: true, escaped string: '$2y$12$KyroZRLDYSvkTErBSSDoT.b6kKOMy10lGkxRAcnUVKxShphPsQj2W'
+[02:21:02] [DEBUG] CHandle::EscapeString(this=0x723880, src='25.1.2.125')
+[02:21:02] [DEBUG] CConnection::EscapeString(src='25.1.2.125', this=0x728128, connection=0x7304b8)
+[02:21:02] [DEBUG] CHandle::EscapeString - return value: true, escaped string: '25.1.2.125'
+[02:21:02] [DEBUG] mysql_format: return value: '194' (../gamemodes/assets/functions.tdz:21)
+[02:21:02] [DEBUG] mysql_tquery(1, "INSERT INTO `players` (`Username`, `Password`, `IPAddress`, `Cash`, `Kills`, `Deaths`) VALUES ('Shady_Dev', '$2y$12$KyroZRLDYSvkTErBSSDoT.b6kKOMy10lGkxRAcnUVKxShphPsQj2W', '25.1.2.125', 0, 0, 0)", "OnPlayerRegister", "d") (../gamemodes/assets/functions.tdz:22)
+[02:21:02] [DEBUG] CCallback::Create(amx=0x17dc668, name='OnPlayerRegister', format='d', params=0x187de68, param_offset=5)
+[02:21:02] [DEBUG] CCallback::Create - callback index for 'OnPlayerRegister': 15
+[02:21:02] [DEBUG] processing specifier 'd' with parameter index 0
+[02:21:02] [DEBUG] retrieved and pushed value '0'
+[02:21:02] [INFO] Callback 'OnPlayerRegister' set up for delayed execution.
+[02:21:02] [DEBUG] created delayed callback with 1 parameter
+[02:21:02] [DEBUG] CHandle::Execute(this=0x723880, type=1, query=0x7240f0)
+[02:21:02] [DEBUG] CConnection::Execute(query=0x7240f0, this=0x1d10020, connection=0x6f9f70)
+[02:21:02] [DEBUG] CQuery::Execute(this=0x7240f0, connection=0x6f9f70)
+[02:21:02] [INFO] query "INSERT INTO `players` (`Username`, `Password`, `IPAddress`, `Cash`, `Kills`, `Deaths`) VALUES ('Shady_Dev', '$2y$12$KyroZRLDYSvkTErBSSDoT.b6kKOMy10lGkxRAcnUVKxShphPsQj2W', '25.1.2.125', 0, 0, 0)" successfully executed within 77.171 milliseconds
+[02:21:02] [DEBUG] CResultSet::Create(connection=0x6f9f70, query_str='INSERT INTO `players` (`Username`, `Password`, `IPAddress`, `Cash`, `Kills`, `Deaths`) VALUES ('Shady_Dev', '$2y$12$KyroZRLDYSvkTErBSSDoT.b6kKOMy10lGkxRAcnUVKxShphPsQj2W', '25.1.2.125', 0, 0, 0)')
+[02:21:02] [DEBUG] created new resultset '0x76c268'
+[02:21:02] [DEBUG] fetched MySQL result '0x0'
+[02:21:02] [DEBUG] CHandle::Execute - return value: true
+[02:21:02] [DEBUG] mysql_tquery: return value: '1' (../gamemodes/assets/functions.tdz:22)
+[02:21:02] [DEBUG] CCallback::Execute(amx=0x17dc668, index=15, num_params=1)
+[02:21:02] [INFO] Executing callback 'OnPlayerRegister' with 1 parameter...
+[02:21:02] [DEBUG] processing internal specifier 'c'
+[02:21:02] [DEBUG] pushed value '0' onto AMX stack
+[02:21:02] [DEBUG] executing AMX callback with index '15'
+[02:21:02] [DEBUG] AMX callback executed with error '0'
+[02:21:02] [INFO] Callback successfully executed.
+[02:21:18] [DEBUG] mysql_format(1, 0x0187E0EC, 200, "UPDATE `players` SET `Cash` = '%i', `Kills` = '%i', `Deaths` = '%i' WHERE `ID` = '%i'") (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:41 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:265)
+[02:21:18] [DEBUG] mysql_format: return value: '81' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:41 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:265)
+[02:21:18] [DEBUG] mysql_query(1, "UPDATE `players` SET `Cash` = '0', `Kills` = '0', `Deaths` = '0' WHERE `ID` = '0'", 1) (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:42 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:265)
+[02:21:18] [DEBUG] CHandle::Execute(this=0x723880, type=3, query=0x7829a8)
+[02:21:18] [DEBUG] CConnection::Execute(query=0x7829a8, this=0x728128, connection=0x7304b8)
+[02:21:18] [DEBUG] CQuery::Execute(this=0x7829a8, connection=0x7304b8)
+[02:21:18] [INFO] query "UPDATE `players` SET `Cash` = '0', `Kills` = '0', `Deaths` = '0' WHERE `ID` = '0'" successfully executed within 19.926 milliseconds
+[02:21:19] [DEBUG] CResultSet::Create(connection=0x7304b8, query_str='UPDATE `players` SET `Cash` = '0', `Kills` = '0', `Deaths` = '0' WHERE `ID` = '0'')
+[02:21:19] [DEBUG] created new resultset '0x76c230'
+[02:21:19] [DEBUG] fetched MySQL result '0x0'
+[02:21:19] [DEBUG] CHandle::Execute - return value: true
+[02:21:19] [DEBUG] mysql_query: return value: '1' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:42 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:265)
+[02:34:06] [WARNING] mysql_connect: no password specified (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:16 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:210)
+[02:34:06] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[02:34:19] [DEBUG] mysql_format(1, 0x0187E090, 200, "SELECT * FROM `players` WHERE `Username` = '%e'") (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:33 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:241)
+[02:34:19] [DEBUG] CHandle::EscapeString(this=0x723880, src='Shady_Dev')
+[02:34:19] [DEBUG] CConnection::EscapeString(src='Shady_Dev', this=0x728128, connection=0x7304b8)
+[02:34:19] [DEBUG] CHandle::EscapeString - return value: true, escaped string: 'Shady_Dev'
+[02:34:19] [DEBUG] mysql_format: return value: '54' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:33 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:241)
+[02:34:19] [DEBUG] mysql_tquery(1, "SELECT * FROM `players` WHERE `Username` = 'Shady_Dev'", "CheckAccount", "d") (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:34 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:241)
+[02:34:19] [DEBUG] CCallback::Create(amx=0x17dc668, name='CheckAccount', format='d', params=0x187e078, param_offset=5)
+[02:34:19] [DEBUG] CCallback::Create - callback index for 'CheckAccount': 2
+[02:34:19] [DEBUG] processing specifier 'd' with parameter index 0
+[02:34:19] [DEBUG] retrieved and pushed value '0'
+[02:34:19] [INFO] Callback 'CheckAccount' set up for delayed execution.
+[02:34:19] [DEBUG] created delayed callback with 1 parameter
+[02:34:19] [DEBUG] CHandle::Execute(this=0x723880, type=1, query=0x7829a8)
+[02:34:19] [DEBUG] CConnection::Execute(query=0x7829a8, this=0x1d10020, connection=0x6f9f70)
+[02:34:19] [DEBUG] CQuery::Execute(this=0x7829a8, connection=0x6f9f70)
+[02:34:19] [DEBUG] CHandle::Execute - return value: true
+[02:34:19] [DEBUG] mysql_tquery: return value: '1' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:34 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:241)
+[02:34:19] [INFO] query "SELECT * FROM `players` WHERE `Username` = 'Shady_Dev'" successfully executed within 1.519 milliseconds
+[02:34:20] [DEBUG] CResultSet::Create(connection=0x6f9f70, query_str='SELECT * FROM `players` WHERE `Username` = 'Shady_Dev'')
+[02:34:20] [DEBUG] created new resultset '0x76c000'
+[02:34:20] [DEBUG] fetched MySQL result '0x796e30'
+[02:34:20] [DEBUG] allocated 132 bytes for PAWN result
+[02:34:20] [DEBUG] CCallback::Execute(amx=0x17dc668, index=2, num_params=1)
+[02:34:20] [INFO] Executing callback 'CheckAccount' with 1 parameter...
+[02:34:20] [DEBUG] processing internal specifier 'c'
+[02:34:20] [DEBUG] pushed value '0' onto AMX stack
+[02:34:20] [DEBUG] executing AMX callback with index '2'
+[02:34:20] [DEBUG] cache_get_row_count(0x0187DF64) (E:\Shady\Scripting\TDZ\pawno\include\a_mysql.inc:182 -> ../gamemodes/assets/functions.tdz:3)
+[02:34:20] [DEBUG] cache_get_row_count: return value: '1' (E:\Shady\Scripting\TDZ\pawno\include\a_mysql.inc:182 -> ../gamemodes/assets/functions.tdz:3)
+[02:34:20] [DEBUG] AMX callback executed with error '0'
+[02:34:20] [INFO] Callback successfully executed.
+[02:34:22] [DEBUG] mysql_format(1, 0x0187DE8C, 300, "SELECT `Password` FROM `players` WHERE `Username` = '%e'") (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:62)
+[02:34:22] [DEBUG] CHandle::EscapeString(this=0x723880, src='Shady_Dev')
+[02:34:22] [DEBUG] CConnection::EscapeString(src='Shady_Dev', this=0x728128, connection=0x7304b8)
+[02:34:22] [DEBUG] CHandle::EscapeString - return value: true, escaped string: 'Shady_Dev'
+[02:34:22] [DEBUG] mysql_format: return value: '63' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:62)
+[02:34:22] [DEBUG] mysql_query(1, "SELECT `Password` FROM `players` WHERE `Username` = 'Shady_Dev'", 1) (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:63)
+[02:34:22] [DEBUG] CHandle::Execute(this=0x723880, type=3, query=0x7829a8)
+[02:34:22] [DEBUG] CConnection::Execute(query=0x7829a8, this=0x728128, connection=0x7304b8)
+[02:34:22] [DEBUG] CQuery::Execute(this=0x7829a8, connection=0x7304b8)
+[02:34:22] [INFO] query "SELECT `Password` FROM `players` WHERE `Username` = 'Shady_Dev'" successfully executed within 0.706 milliseconds
+[02:34:23] [DEBUG] CResultSet::Create(connection=0x7304b8, query_str='SELECT `Password` FROM `players` WHERE `Username` = 'Shady_Dev'')
+[02:34:23] [DEBUG] created new resultset '0x76c1f8'
+[02:34:23] [DEBUG] fetched MySQL result '0x78b638'
+[02:34:23] [DEBUG] allocated 76 bytes for PAWN result
+[02:34:23] [DEBUG] CHandle::Execute - return value: true
+[02:34:23] [DEBUG] mysql_query: return value: '2' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:63)
+[02:34:23] [DEBUG] cache_get_value_name(0, "Password", 0x0187DD98, 61) (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:64)
+[02:34:23] [DEBUG] cache_get_value_name: assigned value: '$2y$12$KyroZRLDYSvkTErBSSDoT.b6kKOMy10lGkxRAcnUVKxShphPsQj2W' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:64)
+[02:34:23] [DEBUG] cache_get_value_name: return value: '1' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:64)
+[02:34:29] [DEBUG] mysql_format(1, 0x0187DE8C, 300, "SELECT `Password` FROM `players` WHERE `Username` = '%e'") (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:62)
+[02:34:29] [DEBUG] CHandle::EscapeString(this=0x723880, src='Shady_Dev')
+[02:34:29] [DEBUG] CConnection::EscapeString(src='Shady_Dev', this=0x728128, connection=0x7304b8)
+[02:34:29] [DEBUG] CHandle::EscapeString - return value: true, escaped string: 'Shady_Dev'
+[02:34:29] [DEBUG] mysql_format: return value: '63' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:62)
+[02:34:29] [DEBUG] mysql_query(1, "SELECT `Password` FROM `players` WHERE `Username` = 'Shady_Dev'", 1) (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:63)
+[02:34:29] [DEBUG] CHandle::Execute(this=0x723880, type=3, query=0x7829a8)
+[02:34:29] [DEBUG] CConnection::Execute(query=0x7829a8, this=0x728128, connection=0x7304b8)
+[02:34:29] [DEBUG] CQuery::Execute(this=0x7829a8, connection=0x7304b8)
+[02:34:29] [INFO] query "SELECT `Password` FROM `players` WHERE `Username` = 'Shady_Dev'" successfully executed within 0.426 milliseconds
+[02:34:29] [DEBUG] CResultSet::Create(connection=0x7304b8, query_str='SELECT `Password` FROM `players` WHERE `Username` = 'Shady_Dev'')
+[02:34:29] [DEBUG] created new resultset '0x76c268'
+[02:34:29] [DEBUG] fetched MySQL result '0x78b638'
+[02:34:29] [DEBUG] allocated 76 bytes for PAWN result
+[02:34:29] [DEBUG] CHandle::Execute - return value: true
+[02:34:29] [DEBUG] mysql_query: return value: '3' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:63)
+[02:34:29] [DEBUG] cache_get_value_name(0, "Password", 0x0187DD98, 61) (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:64)
+[02:34:29] [DEBUG] cache_get_value_name: assigned value: '$2y$12$KyroZRLDYSvkTErBSSDoT.b6kKOMy10lGkxRAcnUVKxShphPsQj2W' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:64)
+[02:34:29] [DEBUG] cache_get_value_name: return value: '1' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:64)
+[02:34:30] [DEBUG] mysql_format(1, 0x0187DF70, 300, "SELECT * FROM `players` WHERE `Username` = '%e'") (../gamemodes/assets/functions.tdz:39)
+[02:34:30] [DEBUG] CHandle::EscapeString(this=0x723880, src='Shady_Dev')
+[02:34:30] [DEBUG] CConnection::EscapeString(src='Shady_Dev', this=0x728128, connection=0x7304b8)
+[02:34:30] [DEBUG] CHandle::EscapeString - return value: true, escaped string: 'Shady_Dev'
+[02:34:30] [DEBUG] mysql_format: return value: '54' (../gamemodes/assets/functions.tdz:39)
+[02:34:30] [DEBUG] mysql_tquery(1, "SELECT * FROM `players` WHERE `Username` = 'Shady_Dev'", "OnPlayerLoad", "d") (../gamemodes/assets/functions.tdz:40)
+[02:34:30] [DEBUG] CCallback::Create(amx=0x17dc668, name='OnPlayerLoad', format='d', params=0x187df58, param_offset=5)
+[02:34:30] [DEBUG] CCallback::Create - callback index for 'OnPlayerLoad': 14
+[02:34:30] [DEBUG] processing specifier 'd' with parameter index 0
+[02:34:30] [DEBUG] retrieved and pushed value '0'
+[02:34:30] [INFO] Callback 'OnPlayerLoad' set up for delayed execution.
+[02:34:30] [DEBUG] created delayed callback with 1 parameter
+[02:34:30] [DEBUG] CHandle::Execute(this=0x723880, type=1, query=0x7829a8)
+[02:34:30] [DEBUG] CConnection::Execute(query=0x7829a8, this=0x1d10020, connection=0x6f9f70)
+[02:34:30] [DEBUG] CQuery::Execute(this=0x7829a8, connection=0x6f9f70)
+[02:34:30] [DEBUG] CHandle::Execute - return value: true
+[02:34:30] [DEBUG] mysql_tquery: return value: '1' (../gamemodes/assets/functions.tdz:40)
+[02:34:30] [INFO] query "SELECT * FROM `players` WHERE `Username` = 'Shady_Dev'" successfully executed within 3.481 milliseconds
+[02:34:30] [DEBUG] CResultSet::Create(connection=0x6f9f70, query_str='SELECT * FROM `players` WHERE `Username` = 'Shady_Dev'')
+[02:34:30] [DEBUG] created new resultset '0x76c0e0'
+[02:34:30] [DEBUG] fetched MySQL result '0x796ea8'
+[02:34:30] [DEBUG] allocated 132 bytes for PAWN result
+[02:34:30] [DEBUG] CCallback::Execute(amx=0x17dc668, index=14, num_params=1)
+[02:34:30] [INFO] Executing callback 'OnPlayerLoad' with 1 parameter...
+[02:34:30] [DEBUG] processing internal specifier 'c'
+[02:34:30] [DEBUG] pushed value '0' onto AMX stack
+[02:34:30] [DEBUG] executing AMX callback with index '14'
+[02:34:30] [DEBUG] cache_get_value_name_int(0, "ID", 0x018750D4) (../gamemodes/assets/functions.tdz:53)
+[02:34:31] [DEBUG] cache_get_value_name_int: assigned value: '2' (../gamemodes/assets/functions.tdz:53)
+[02:34:31] [DEBUG] cache_get_value_name_int: return value: '1' (../gamemodes/assets/functions.tdz:53)
+[02:34:31] [DEBUG] cache_get_value_name_int(0, "Cash", 0x018750D8) (../gamemodes/assets/functions.tdz:54)
+[02:34:31] [DEBUG] cache_get_value_name_int: assigned value: '0' (../gamemodes/assets/functions.tdz:54)
+[02:34:31] [DEBUG] cache_get_value_name_int: return value: '1' (../gamemodes/assets/functions.tdz:54)
+[02:34:31] [DEBUG] cache_get_value_name_int(0, "Kills", 0x018750DC) (../gamemodes/assets/functions.tdz:55)
+[02:34:31] [DEBUG] cache_get_value_name_int: assigned value: '0' (../gamemodes/assets/functions.tdz:55)
+[02:34:31] [DEBUG] cache_get_value_name_int: return value: '1' (../gamemodes/assets/functions.tdz:55)
+[02:34:31] [DEBUG] cache_get_value_name_int(0, "Deaths", 0x018750E0) (../gamemodes/assets/functions.tdz:56)
+[02:34:31] [DEBUG] cache_get_value_name_int: assigned value: '0' (../gamemodes/assets/functions.tdz:56)
+[02:34:31] [DEBUG] cache_get_value_name_int: return value: '1' (../gamemodes/assets/functions.tdz:56)
+[02:34:31] [DEBUG] AMX callback executed with error '0'
+[02:34:31] [INFO] Callback successfully executed.
+[02:34:39] [DEBUG] mysql_format(1, 0x0187E0EC, 200, "UPDATE `players` SET `Cash` = '%i', `Kills` = '%i', `Deaths` = '%i' WHERE `ID` = '%i'") (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:41 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:265)
+[02:34:39] [DEBUG] mysql_format: return value: '81' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:41 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:265)
+[02:34:39] [DEBUG] mysql_query(1, "UPDATE `players` SET `Cash` = '0', `Kills` = '0', `Deaths` = '0' WHERE `ID` = '2'", 1) (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:42 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:265)
+[02:34:39] [DEBUG] CHandle::Execute(this=0x723880, type=3, query=0x7829a8)
+[02:34:39] [DEBUG] CConnection::Execute(query=0x7829a8, this=0x728128, connection=0x7304b8)
+[02:34:39] [DEBUG] CQuery::Execute(this=0x7829a8, connection=0x7304b8)
+[02:34:39] [INFO] query "UPDATE `players` SET `Cash` = '0', `Kills` = '0', `Deaths` = '0' WHERE `ID` = '2'" successfully executed within 61.134 milliseconds
+[02:34:39] [DEBUG] CResultSet::Create(connection=0x7304b8, query_str='UPDATE `players` SET `Cash` = '0', `Kills` = '0', `Deaths` = '0' WHERE `ID` = '2'')
+[02:34:39] [DEBUG] created new resultset '0x76c3f0'
+[02:34:39] [DEBUG] fetched MySQL result '0x0'
+[02:34:39] [DEBUG] CHandle::Execute - return value: true
+[02:34:39] [DEBUG] mysql_query: return value: '4' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:42 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:265)
+[02:35:56] [WARNING] mysql_connect: no password specified (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:16 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:210)
+[02:35:56] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[02:36:08] [WARNING] mysql_connect: no password specified (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:16 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:210)
+[02:36:08] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[02:36:16] [DEBUG] mysql_format(1, 0x0195FBF8, 200, "SELECT * FROM `players` WHERE `Username` = '%e'") (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:39 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:241)
+[02:36:16] [DEBUG] CHandle::EscapeString(this=0x2b6440, src='Shady_Dev')
+[02:36:16] [DEBUG] CConnection::EscapeString(src='Shady_Dev', this=0x2be918, connection=0x271280)
+[02:36:16] [DEBUG] CHandle::EscapeString - return value: true, escaped string: 'Shady_Dev'
+[02:36:16] [DEBUG] mysql_format: return value: '54' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:39 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:241)
+[02:36:16] [DEBUG] mysql_tquery(1, "SELECT * FROM `players` WHERE `Username` = 'Shady_Dev'", "CheckAccount", "d") (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:40 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:241)
+[02:36:16] [DEBUG] CCallback::Create(amx=0x18bc668, name='CheckAccount', format='d', params=0x195fbe0, param_offset=5)
+[02:36:16] [DEBUG] CCallback::Create - callback index for 'CheckAccount': 2
+[02:36:16] [DEBUG] processing specifier 'd' with parameter index 0
+[02:36:16] [DEBUG] retrieved and pushed value '0'
+[02:36:16] [INFO] Callback 'CheckAccount' set up for delayed execution.
+[02:36:16] [DEBUG] created delayed callback with 1 parameter
+[02:36:16] [DEBUG] CHandle::Execute(this=0x2b6440, type=1, query=0x32deb8)
+[02:36:16] [DEBUG] CConnection::Execute(query=0x32deb8, this=0x3470020, connection=0x2bfbf0)
+[02:36:16] [DEBUG] CQuery::Execute(this=0x32deb8, connection=0x2bfbf0)
+[02:36:16] [DEBUG] CHandle::Execute - return value: true
+[02:36:16] [DEBUG] mysql_tquery: return value: '1' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:40 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:241)
+[02:36:16] [INFO] query "SELECT * FROM `players` WHERE `Username` = 'Shady_Dev'" successfully executed within 2.988 milliseconds
+[02:36:16] [DEBUG] CResultSet::Create(connection=0x2bfbf0, query_str='SELECT * FROM `players` WHERE `Username` = 'Shady_Dev'')
+[02:36:16] [DEBUG] created new resultset '0x31d390'
+[02:36:16] [DEBUG] fetched MySQL result '0x312668'
+[02:36:16] [DEBUG] allocated 132 bytes for PAWN result
+[02:36:16] [DEBUG] CCallback::Execute(amx=0x18bc668, index=2, num_params=1)
+[02:36:16] [INFO] Executing callback 'CheckAccount' with 1 parameter...
+[02:36:16] [DEBUG] processing internal specifier 'c'
+[02:36:16] [DEBUG] pushed value '0' onto AMX stack
+[02:36:16] [DEBUG] executing AMX callback with index '2'
+[02:36:16] [DEBUG] cache_get_row_count(0x0195FACC) (E:\Shady\Scripting\TDZ\pawno\include\a_mysql.inc:182 -> ../gamemodes/assets/functions.tdz:3)
+[02:36:16] [DEBUG] cache_get_row_count: return value: '1' (E:\Shady\Scripting\TDZ\pawno\include\a_mysql.inc:182 -> ../gamemodes/assets/functions.tdz:3)
+[02:36:16] [DEBUG] AMX callback executed with error '0'
+[02:36:16] [INFO] Callback successfully executed.
+[02:36:18] [DEBUG] mysql_format(1, 0x0195F9F4, 300, "SELECT `Password` FROM `players` WHERE `Username` = '%e'") (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:97)
+[02:36:18] [DEBUG] CHandle::EscapeString(this=0x2b6440, src='Shady_Dev')
+[02:36:18] [DEBUG] CConnection::EscapeString(src='Shady_Dev', this=0x2be918, connection=0x271280)
+[02:36:18] [DEBUG] CHandle::EscapeString - return value: true, escaped string: 'Shady_Dev'
+[02:36:18] [DEBUG] mysql_format: return value: '63' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:97)
+[02:36:18] [DEBUG] mysql_query(1, "SELECT `Password` FROM `players` WHERE `Username` = 'Shady_Dev'", 1) (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:98)
+[02:36:18] [DEBUG] CHandle::Execute(this=0x2b6440, type=3, query=0x327428)
+[02:36:18] [DEBUG] CConnection::Execute(query=0x327428, this=0x2be918, connection=0x271280)
+[02:36:18] [DEBUG] CQuery::Execute(this=0x327428, connection=0x271280)
+[02:36:18] [INFO] query "SELECT `Password` FROM `players` WHERE `Username` = 'Shady_Dev'" successfully executed within 0.469 milliseconds
+[02:36:18] [DEBUG] CResultSet::Create(connection=0x271280, query_str='SELECT `Password` FROM `players` WHERE `Username` = 'Shady_Dev'')
+[02:36:18] [DEBUG] created new resultset '0x31d4a8'
+[02:36:18] [DEBUG] fetched MySQL result '0x2a2138'
+[02:36:18] [DEBUG] allocated 76 bytes for PAWN result
+[02:36:18] [DEBUG] CHandle::Execute - return value: true
+[02:36:18] [DEBUG] mysql_query: return value: '1' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:98)
+[02:36:18] [DEBUG] cache_get_value_name(0, "Password", 0x0195F900, 61) (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:99)
+[02:36:18] [DEBUG] cache_get_value_name: assigned value: '$2y$12$KyroZRLDYSvkTErBSSDoT.b6kKOMy10lGkxRAcnUVKxShphPsQj2W' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:99)
+[02:36:18] [DEBUG] cache_get_value_name: return value: '1' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:99)
+[02:36:19] [DEBUG] mysql_format(1, 0x0195FAD8, 300, "SELECT * FROM `players` WHERE `Username` = '%e'") (../gamemodes/assets/functions.tdz:39)
+[02:36:19] [DEBUG] CHandle::EscapeString(this=0x2b6440, src='Shady_Dev')
+[02:36:19] [DEBUG] CConnection::EscapeString(src='Shady_Dev', this=0x2be918, connection=0x271280)
+[02:36:19] [DEBUG] CHandle::EscapeString - return value: true, escaped string: 'Shady_Dev'
+[02:36:19] [DEBUG] mysql_format: return value: '54' (../gamemodes/assets/functions.tdz:39)
+[02:36:19] [DEBUG] mysql_tquery(1, "SELECT * FROM `players` WHERE `Username` = 'Shady_Dev'", "OnPlayerLoad", "d") (../gamemodes/assets/functions.tdz:40)
+[02:36:19] [DEBUG] CCallback::Create(amx=0x18bc668, name='OnPlayerLoad', format='d', params=0x195fac0, param_offset=5)
+[02:36:19] [DEBUG] CCallback::Create - callback index for 'OnPlayerLoad': 14
+[02:36:19] [DEBUG] processing specifier 'd' with parameter index 0
+[02:36:19] [DEBUG] retrieved and pushed value '0'
+[02:36:19] [INFO] Callback 'OnPlayerLoad' set up for delayed execution.
+[02:36:19] [DEBUG] created delayed callback with 1 parameter
+[02:36:19] [DEBUG] CHandle::Execute(this=0x2b6440, type=1, query=0x32deb8)
+[02:36:19] [DEBUG] CConnection::Execute(query=0x32deb8, this=0x3470020, connection=0x2bfbf0)
+[02:36:19] [DEBUG] CQuery::Execute(this=0x32deb8, connection=0x2bfbf0)
+[02:36:19] [DEBUG] CHandle::Execute - return value: true
+[02:36:19] [DEBUG] mysql_tquery: return value: '1' (../gamemodes/assets/functions.tdz:40)
+[02:36:19] [INFO] query "SELECT * FROM `players` WHERE `Username` = 'Shady_Dev'" successfully executed within 0.469 milliseconds
+[02:36:19] [DEBUG] CResultSet::Create(connection=0x2bfbf0, query_str='SELECT * FROM `players` WHERE `Username` = 'Shady_Dev'')
+[02:36:19] [DEBUG] created new resultset '0x31d550'
+[02:36:19] [DEBUG] fetched MySQL result '0x321e48'
+[02:36:19] [DEBUG] allocated 132 bytes for PAWN result
+[02:36:19] [DEBUG] CCallback::Execute(amx=0x18bc668, index=14, num_params=1)
+[02:36:20] [INFO] Executing callback 'OnPlayerLoad' with 1 parameter...
+[02:36:20] [DEBUG] processing internal specifier 'c'
+[02:36:20] [DEBUG] pushed value '0' onto AMX stack
+[02:36:20] [DEBUG] executing AMX callback with index '14'
+[02:36:20] [DEBUG] cache_get_value_name_int(0, "ID", 0x01955C14) (../gamemodes/assets/functions.tdz:53)
+[02:36:21] [DEBUG] cache_get_value_name_int: assigned value: '2' (../gamemodes/assets/functions.tdz:53)
+[02:36:21] [DEBUG] cache_get_value_name_int: return value: '1' (../gamemodes/assets/functions.tdz:53)
+[02:36:21] [DEBUG] cache_get_value_name_int(0, "Cash", 0x01955C18) (../gamemodes/assets/functions.tdz:54)
+[02:36:21] [DEBUG] cache_get_value_name_int: assigned value: '0' (../gamemodes/assets/functions.tdz:54)
+[02:36:21] [DEBUG] cache_get_value_name_int: return value: '1' (../gamemodes/assets/functions.tdz:54)
+[02:36:21] [DEBUG] cache_get_value_name_int(0, "Kills", 0x01955C1C) (../gamemodes/assets/functions.tdz:55)
+[02:36:21] [DEBUG] cache_get_value_name_int: assigned value: '0' (../gamemodes/assets/functions.tdz:55)
+[02:36:21] [DEBUG] cache_get_value_name_int: return value: '1' (../gamemodes/assets/functions.tdz:55)
+[02:36:21] [DEBUG] cache_get_value_name_int(0, "Deaths", 0x01955C20) (../gamemodes/assets/functions.tdz:56)
+[02:36:21] [DEBUG] cache_get_value_name_int: assigned value: '0' (../gamemodes/assets/functions.tdz:56)
+[02:36:21] [DEBUG] cache_get_value_name_int: return value: '1' (../gamemodes/assets/functions.tdz:56)
+[02:36:21] [DEBUG] AMX callback executed with error '0'
+[02:36:21] [INFO] Callback successfully executed.
+[02:36:51] [DEBUG] mysql_format(1, 0x0195FC54, 200, "UPDATE `players` SET `Cash` = '%i', `Kills` = '%i', `Deaths` = '%i' WHERE `ID` = '%i'") (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:47 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:265)
+[02:36:51] [DEBUG] mysql_format: return value: '81' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:47 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:265)
+[02:36:51] [DEBUG] mysql_query(1, "UPDATE `players` SET `Cash` = '0', `Kills` = '0', `Deaths` = '0' WHERE `ID` = '2'", 1) (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:48 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:265)
+[02:36:51] [DEBUG] CHandle::Execute(this=0x2b6440, type=3, query=0x34e6c8)
+[02:36:51] [DEBUG] CConnection::Execute(query=0x34e6c8, this=0x2be918, connection=0x271280)
+[02:36:51] [DEBUG] CQuery::Execute(this=0x34e6c8, connection=0x271280)
+[02:36:51] [INFO] query "UPDATE `players` SET `Cash` = '0', `Kills` = '0', `Deaths` = '0' WHERE `ID` = '2'" successfully executed within 54.653 milliseconds
+[02:36:51] [DEBUG] CResultSet::Create(connection=0x271280, query_str='UPDATE `players` SET `Cash` = '0', `Kills` = '0', `Deaths` = '0' WHERE `ID` = '2'')
+[02:36:51] [DEBUG] created new resultset '0x3110f8'
+[02:36:51] [DEBUG] fetched MySQL result '0x0'
+[02:36:51] [DEBUG] CHandle::Execute - return value: true
+[02:36:51] [DEBUG] mysql_query: return value: '2' (e:\Shady\Scripting\TDZ\gamemodes\TDZ.pwn:48 -> E:\Shady\Scripting\TDZ\pawno\include\sscanf2.inc:265)

@@ -1,0 +1,591 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[01:59:01] filterscripts = ""  (string)
+[01:59:01] 
+[01:59:01] Server Plugins
+[01:59:01] --------------
+[01:59:01]  Loading plugin: bcrypt-samp
+[01:59:01]   plugin.bcrypt v2.2.3 was loaded.
+[01:59:01]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[01:59:01]   Loaded.
+[01:59:01]  Loading plugin: crashdetect
+[01:59:01]   CrashDetect plugin 4.19.4
+[01:59:01]   Loaded.
+[01:59:01]  Loading plugin: mysql
+[01:59:01]  >> plugin.mysql: R41-4 successfully loaded.
+[01:59:01]   Loaded.
+[01:59:01]  Loading plugin: sscanf
+[01:59:01] 
+
+[01:59:01]  ===============================
+
+[01:59:01]       sscanf plugin loaded.     
+
+[01:59:01]          Version:  2.8.3        
+
+[01:59:01]   (c) 2018 Alex "Y_Less" Cole  
+
+[01:59:01]  ===============================
+
+[01:59:01]   Loaded.
+[01:59:01]  Loading plugin: streamer
+[01:59:01] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[01:59:01]   Loaded.
+[01:59:01]  Loading plugin: nativechecker
+[01:59:01]   Loaded.
+[01:59:01]  Loaded 6 plugins.
+
+[01:59:01] [artwork:crc] lvpdpc2.dff CRC = 0xFBD1EA7C
+[01:59:01] [artwork:crc] lvpdpc2.txd CRC = 0xDC92731E
+[01:59:01] [artwork:crc] lapdpd2.dff CRC = 0xA558D422
+[01:59:01] [artwork:crc] lapdpd2.txd CRC = 0xA442E2DA
+[01:59:01] [artwork:crc] wallzzz.dff CRC = 0x4BC6EDFF
+[01:59:01] [artwork:crc] wallzzz.txd CRC = 0x235E3EEB
+[01:59:01] 
+[01:59:01] Filterscripts
+[01:59:01] ---------------
+[01:59:01]   Loaded 0 filterscripts.
+
+[01:59:01] Loaded 1 vehicles from: vehicles/trains.txt
+[01:59:01] Loaded 3 vehicles from: vehicles/pilots.txt
+[01:59:01] Loaded 15 vehicles from: vehicles/lv_law.txt
+[01:59:01] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[01:59:01] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[01:59:01] Loaded 38 vehicles from: vehicles/sf_law.txt
+[01:59:01] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[01:59:01] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[01:59:01] Loaded 24 vehicles from: vehicles/ls_law.txt
+[01:59:02] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[01:59:02] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[01:59:02] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[01:59:02] Loaded 71 vehicles from: vehicles/whetstone.txt
+[01:59:02] Loaded 168 vehicles from: vehicles/bone.txt
+[01:59:02] Loaded 61 vehicles from: vehicles/flint.txt
+[01:59:02] Loaded 96 vehicles from: vehicles/tierra.txt
+[01:59:02] Loaded 96 vehicles from: vehicles/red_county.txt
+[01:59:02] Total vehicles from files: 1779
+[01:59:02] 
+---------------------------------------
+[01:59:02] Running Grand Larceny - by the SA-MP team
+
+[01:59:02] ---------------------------------------
+
+[01:59:02] Number of vehicle models: 173
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[02:18:18] filterscripts = ""  (string)
+[02:18:18] 
+[02:18:18] Server Plugins
+[02:18:18] --------------
+[02:18:18]  Loading plugin: bcrypt-samp
+[02:18:18]   plugin.bcrypt v2.2.3 was loaded.
+[02:18:18]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[02:18:18]   Loaded.
+[02:18:18]  Loading plugin: crashdetect
+[02:18:18]   CrashDetect plugin 4.19.4
+[02:18:18]   Loaded.
+[02:18:18]  Loading plugin: mysql
+[02:18:18]  >> plugin.mysql: R41-4 successfully loaded.
+[02:18:18]   Loaded.
+[02:18:18]  Loading plugin: sscanf
+[02:18:18] 
+
+[02:18:18]  ===============================
+
+[02:18:18]       sscanf plugin loaded.     
+
+[02:18:18]          Version:  2.8.3        
+
+[02:18:18]   (c) 2018 Alex "Y_Less" Cole  
+
+[02:18:18]  ===============================
+
+[02:18:18]   Loaded.
+[02:18:18]  Loading plugin: streamer
+[02:18:18] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:18:18]   Loaded.
+[02:18:18]  Loading plugin: nativechecker
+[02:18:18]   Loaded.
+[02:18:18]  Loaded 6 plugins.
+
+[02:18:18] [artwork:crc] lvpdpc2.dff CRC = 0xFBD1EA7C
+[02:18:18] [artwork:crc] lvpdpc2.txd CRC = 0xDC92731E
+[02:18:18] [artwork:crc] lapdpd2.dff CRC = 0xA558D422
+[02:18:18] [artwork:crc] lapdpd2.txd CRC = 0xA442E2DA
+[02:18:18] [artwork:crc] wallzzz.dff CRC = 0x4BC6EDFF
+[02:18:18] [artwork:crc] wallzzz.txd CRC = 0x235E3EEB
+[02:18:18] I couldn't load any gamemode scripts. Please verify your server.cfg
+[02:18:18] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[02:18:35] filterscripts = ""  (string)
+[02:18:35] 
+[02:18:35] Server Plugins
+[02:18:35] --------------
+[02:18:35]  Loading plugin: bcrypt-samp
+[02:18:35]   plugin.bcrypt v2.2.3 was loaded.
+[02:18:35]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[02:18:35]   Loaded.
+[02:18:35]  Loading plugin: crashdetect
+[02:18:35]   CrashDetect plugin 4.19.4
+[02:18:35]   Loaded.
+[02:18:35]  Loading plugin: mysql
+[02:18:35]  >> plugin.mysql: R41-4 successfully loaded.
+[02:18:35]   Loaded.
+[02:18:35]  Loading plugin: sscanf
+[02:18:35] 
+
+[02:18:35]  ===============================
+
+[02:18:35]       sscanf plugin loaded.     
+
+[02:18:35]          Version:  2.8.3        
+
+[02:18:35]   (c) 2018 Alex "Y_Less" Cole  
+
+[02:18:35]  ===============================
+
+[02:18:35]   Loaded.
+[02:18:35]  Loading plugin: streamer
+[02:18:35] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:18:35]   Loaded.
+[02:18:35]  Loading plugin: nativechecker
+[02:18:35]   Loaded.
+[02:18:35]  Loaded 6 plugins.
+
+[02:18:35] [artwork:crc] lvpdpc2.dff CRC = 0xFBD1EA7C
+[02:18:35] [artwork:crc] lvpdpc2.txd CRC = 0xDC92731E
+[02:18:35] [artwork:crc] lapdpd2.dff CRC = 0xA558D422
+[02:18:35] [artwork:crc] lapdpd2.txd CRC = 0xA442E2DA
+[02:18:35] [artwork:crc] wallzzz.dff CRC = 0x4BC6EDFF
+[02:18:35] [artwork:crc] wallzzz.txd CRC = 0x235E3EEB
+[02:18:35] 
+[02:18:35] Filterscripts
+[02:18:35] ---------------
+[02:18:35]   Loaded 0 filterscripts.
+
+[02:18:35] TDZ Local: MySQL Connection was successful.
+[02:18:35] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
+[02:18:35] Script[gamemodes/TDZ.amx]: Run time error 20: "Invalid index parameter (bad entry point)"
+[02:18:35] Number of vehicle models: 0
+[02:18:35] plugin.bcrypt: The plugin is up-to-date.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[02:18:50] filterscripts = ""  (string)
+[02:18:50] 
+[02:18:50] Server Plugins
+[02:18:50] --------------
+[02:18:50]  Loading plugin: bcrypt-samp
+[02:18:50]   plugin.bcrypt v2.2.3 was loaded.
+[02:18:50]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[02:18:50]   Loaded.
+[02:18:50]  Loading plugin: crashdetect
+[02:18:50]   CrashDetect plugin 4.19.4
+[02:18:50]   Loaded.
+[02:18:50]  Loading plugin: mysql
+[02:18:50]  >> plugin.mysql: R41-4 successfully loaded.
+[02:18:50]   Loaded.
+[02:18:50]  Loading plugin: sscanf
+[02:18:50] 
+
+[02:18:50]  ===============================
+
+[02:18:50]       sscanf plugin loaded.     
+
+[02:18:50]          Version:  2.8.3        
+
+[02:18:50]   (c) 2018 Alex "Y_Less" Cole  
+
+[02:18:50]  ===============================
+
+[02:18:50]   Loaded.
+[02:18:50]  Loading plugin: streamer
+[02:18:50] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:18:50]   Loaded.
+[02:18:50]  Loading plugin: nativechecker
+[02:18:50]   Loaded.
+[02:18:50]  Loaded 6 plugins.
+
+[02:18:50] [artwork:crc] lvpdpc2.dff CRC = 0xFBD1EA7C
+[02:18:50] [artwork:crc] lvpdpc2.txd CRC = 0xDC92731E
+[02:18:50] [artwork:crc] lapdpd2.dff CRC = 0xA558D422
+[02:18:50] [artwork:crc] lapdpd2.txd CRC = 0xA442E2DA
+[02:18:50] [artwork:crc] wallzzz.dff CRC = 0x4BC6EDFF
+[02:18:50] [artwork:crc] wallzzz.txd CRC = 0x235E3EEB
+[02:18:50] 
+[02:18:50] Filterscripts
+[02:18:50] ---------------
+[02:18:50]   Loaded 0 filterscripts.
+
+[02:18:50] TDZ Local: MySQL Connection was successful.
+[02:18:50] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
+[02:18:50] Script[gamemodes/TDZ.amx]: Run time error 20: "Invalid index parameter (bad entry point)"
+[02:18:50] Number of vehicle models: 0
+[02:18:50] plugin.bcrypt: The plugin is up-to-date.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[02:19:32] filterscripts = ""  (string)
+[02:19:32] 
+[02:19:32] Server Plugins
+[02:19:32] --------------
+[02:19:32]  Loading plugin: bcrypt-samp
+[02:19:32]   plugin.bcrypt v2.2.3 was loaded.
+[02:19:32]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[02:19:32]   Loaded.
+[02:19:32]  Loading plugin: crashdetect
+[02:19:32]   CrashDetect plugin 4.19.4
+[02:19:32]   Loaded.
+[02:19:32]  Loading plugin: mysql
+[02:19:32]  >> plugin.mysql: R41-4 successfully loaded.
+[02:19:32]   Loaded.
+[02:19:32]  Loading plugin: sscanf
+[02:19:32] 
+
+[02:19:32]  ===============================
+
+[02:19:32]       sscanf plugin loaded.     
+
+[02:19:32]          Version:  2.8.3        
+
+[02:19:32]   (c) 2018 Alex "Y_Less" Cole  
+
+[02:19:32]  ===============================
+
+[02:19:32]   Loaded.
+[02:19:32]  Loading plugin: streamer
+[02:19:32] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:19:32]   Loaded.
+[02:19:32]  Loading plugin: nativechecker
+[02:19:32]   Loaded.
+[02:19:32]  Loaded 6 plugins.
+
+[02:19:32] [artwork:crc] lvpdpc2.dff CRC = 0xFBD1EA7C
+[02:19:32] [artwork:crc] lvpdpc2.txd CRC = 0xDC92731E
+[02:19:32] [artwork:crc] lapdpd2.dff CRC = 0xA558D422
+[02:19:32] [artwork:crc] lapdpd2.txd CRC = 0xA442E2DA
+[02:19:32] [artwork:crc] wallzzz.dff CRC = 0x4BC6EDFF
+[02:19:32] [artwork:crc] wallzzz.txd CRC = 0x235E3EEB
+[02:19:32] 
+[02:19:32] Filterscripts
+[02:19:32] ---------------
+[02:19:32]   Loaded 0 filterscripts.
+
+[02:19:32] TDZ Local: MySQL Connection was successful.
+[02:19:32] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
+[02:19:32] Script[gamemodes/TDZ.amx]: Run time error 20: "Invalid index parameter (bad entry point)"
+[02:19:32] Number of vehicle models: 0
+[02:19:32] plugin.bcrypt: The plugin is up-to-date.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[02:20:18] filterscripts = ""  (string)
+[02:20:18] 
+[02:20:18] Server Plugins
+[02:20:18] --------------
+[02:20:18]  Loading plugin: bcrypt-samp
+[02:20:18]   plugin.bcrypt v2.2.3 was loaded.
+[02:20:18]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[02:20:18]   Loaded.
+[02:20:18]  Loading plugin: crashdetect
+[02:20:18]   CrashDetect plugin 4.19.4
+[02:20:18]   Loaded.
+[02:20:18]  Loading plugin: mysql
+[02:20:18]  >> plugin.mysql: R41-4 successfully loaded.
+[02:20:18]   Loaded.
+[02:20:18]  Loading plugin: sscanf
+[02:20:18] 
+
+[02:20:18]  ===============================
+
+[02:20:18]       sscanf plugin loaded.     
+
+[02:20:18]          Version:  2.8.3        
+
+[02:20:18]   (c) 2018 Alex "Y_Less" Cole  
+
+[02:20:18]  ===============================
+
+[02:20:18]   Loaded.
+[02:20:18]  Loading plugin: streamer
+[02:20:18] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:20:18]   Loaded.
+[02:20:18]  Loading plugin: nativechecker
+[02:20:18]   Loaded.
+[02:20:18]  Loaded 6 plugins.
+
+[02:20:18] [artwork:crc] lvpdpc2.dff CRC = 0xFBD1EA7C
+[02:20:18] [artwork:crc] lvpdpc2.txd CRC = 0xDC92731E
+[02:20:18] [artwork:crc] lapdpd2.dff CRC = 0xA558D422
+[02:20:18] [artwork:crc] lapdpd2.txd CRC = 0xA442E2DA
+[02:20:18] [artwork:crc] wallzzz.dff CRC = 0x4BC6EDFF
+[02:20:18] [artwork:crc] wallzzz.txd CRC = 0x235E3EEB
+[02:20:18] 
+[02:20:18] Filterscripts
+[02:20:18] ---------------
+[02:20:18]   Loaded 0 filterscripts.
+
+[02:20:18] TDZ Local: MySQL Connection was successful.
+[02:20:18] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
+[02:20:18] Script[gamemodes/TDZ.amx]: Run time error 20: "Invalid index parameter (bad entry point)"
+[02:20:18] Number of vehicle models: 0
+[02:20:18] plugin.bcrypt: The plugin is up-to-date.
+[02:20:56] [connection] incoming connection: 25.1.2.125:54314 id: 0
+[02:20:56] [join] Shady_Dev has joined the server (0:25.1.2.125)
+[02:21:15] [chat] [Shady_Dev]: `/q
+[02:21:19] [part] Shady_Dev has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[02:34:06] filterscripts = ""  (string)
+[02:34:06] 
+[02:34:06] Server Plugins
+[02:34:06] --------------
+[02:34:06]  Loading plugin: bcrypt-samp
+[02:34:06]   plugin.bcrypt v2.2.3 was loaded.
+[02:34:06]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[02:34:06]   Loaded.
+[02:34:06]  Loading plugin: crashdetect
+[02:34:06]   CrashDetect plugin 4.19.4
+[02:34:06]   Loaded.
+[02:34:06]  Loading plugin: mysql
+[02:34:06]  >> plugin.mysql: R41-4 successfully loaded.
+[02:34:06]   Loaded.
+[02:34:06]  Loading plugin: sscanf
+[02:34:06] 
+
+[02:34:06]  ===============================
+
+[02:34:06]       sscanf plugin loaded.     
+
+[02:34:06]          Version:  2.8.3        
+
+[02:34:06]   (c) 2018 Alex "Y_Less" Cole  
+
+[02:34:06]  ===============================
+
+[02:34:06]   Loaded.
+[02:34:06]  Loading plugin: streamer
+[02:34:06] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:34:06]   Loaded.
+[02:34:06]  Loading plugin: nativechecker
+[02:34:06]   Loaded.
+[02:34:06]  Loaded 6 plugins.
+
+[02:34:06] [artwork:crc] lvpdpc2.dff CRC = 0xFBD1EA7C
+[02:34:06] [artwork:crc] lvpdpc2.txd CRC = 0xDC92731E
+[02:34:06] [artwork:crc] lapdpd2.dff CRC = 0xA558D422
+[02:34:06] [artwork:crc] lapdpd2.txd CRC = 0xA442E2DA
+[02:34:06] [artwork:crc] wallzzz.dff CRC = 0x4BC6EDFF
+[02:34:06] [artwork:crc] wallzzz.txd CRC = 0x235E3EEB
+[02:34:06] 
+[02:34:06] Filterscripts
+[02:34:06] ---------------
+[02:34:06]   Loaded 0 filterscripts.
+
+[02:34:06] TDZ Local: MySQL Connection was successful.
+[02:34:06] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
+[02:34:06] Script[gamemodes/TDZ.amx]: Run time error 20: "Invalid index parameter (bad entry point)"
+[02:34:06] Number of vehicle models: 0
+[02:34:06] plugin.bcrypt: The plugin is up-to-date.
+[02:34:19] [connection] incoming connection: 25.1.2.125:52728 id: 0
+[02:34:19] [join] Shady_Dev has joined the server (0:25.1.2.125)
+[02:34:39] [part] Shady_Dev has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[02:35:56] filterscripts = ""  (string)
+[02:35:56] 
+[02:35:56] Server Plugins
+[02:35:56] --------------
+[02:35:56]  Loading plugin: bcrypt-samp
+[02:35:56]   plugin.bcrypt v2.2.3 was loaded.
+[02:35:56]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[02:35:56]   Loaded.
+[02:35:56]  Loading plugin: crashdetect
+[02:35:56]   CrashDetect plugin 4.19.4
+[02:35:56]   Loaded.
+[02:35:56]  Loading plugin: mysql
+[02:35:56]  >> plugin.mysql: R41-4 successfully loaded.
+[02:35:56]   Loaded.
+[02:35:56]  Loading plugin: sscanf
+[02:35:56] 
+
+[02:35:56]  ===============================
+
+[02:35:56]       sscanf plugin loaded.     
+
+[02:35:56]          Version:  2.8.3        
+
+[02:35:56]   (c) 2018 Alex "Y_Less" Cole  
+
+[02:35:56]  ===============================
+
+[02:35:56]   Loaded.
+[02:35:56]  Loading plugin: streamer
+[02:35:56] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:35:56]   Loaded.
+[02:35:56]  Loading plugin: nativechecker
+[02:35:56]   Loaded.
+[02:35:56]  Loaded 6 plugins.
+
+[02:35:56] [artwork:crc] lvpdpc2.dff CRC = 0xFBD1EA7C
+[02:35:56] [artwork:crc] lvpdpc2.txd CRC = 0xDC92731E
+[02:35:56] [artwork:crc] lapdpd2.dff CRC = 0xA558D422
+[02:35:56] [artwork:crc] lapdpd2.txd CRC = 0xA442E2DA
+[02:35:56] [artwork:crc] wallzzz.dff CRC = 0x4BC6EDFF
+[02:35:56] [artwork:crc] wallzzz.txd CRC = 0x235E3EEB
+[02:35:56] 
+[02:35:56] Filterscripts
+[02:35:56] ---------------
+[02:35:56]   Loaded 0 filterscripts.
+
+[02:35:56] TDZ Local: MySQL Connection was successful.
+[02:35:56] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
+[02:35:56] Script[gamemodes/TDZ.amx]: Run time error 20: "Invalid index parameter (bad entry point)"
+[02:35:56] Number of vehicle models: 0
+[02:35:56] plugin.bcrypt: The plugin is up-to-date.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[02:36:08] filterscripts = ""  (string)
+[02:36:08] 
+[02:36:08] Server Plugins
+[02:36:08] --------------
+[02:36:08]  Loading plugin: bcrypt-samp
+[02:36:08]   plugin.bcrypt v2.2.3 was loaded.
+[02:36:08]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[02:36:08]   Loaded.
+[02:36:08]  Loading plugin: crashdetect
+[02:36:08]   CrashDetect plugin 4.19.4
+[02:36:08]   Loaded.
+[02:36:08]  Loading plugin: mysql
+[02:36:08]  >> plugin.mysql: R41-4 successfully loaded.
+[02:36:08]   Loaded.
+[02:36:08]  Loading plugin: sscanf
+[02:36:08] 
+
+[02:36:08]  ===============================
+
+[02:36:08]       sscanf plugin loaded.     
+
+[02:36:08]          Version:  2.8.3        
+
+[02:36:08]   (c) 2018 Alex "Y_Less" Cole  
+
+[02:36:08]  ===============================
+
+[02:36:08]   Loaded.
+[02:36:08]  Loading plugin: streamer
+[02:36:08] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:36:08]   Loaded.
+[02:36:08]  Loading plugin: nativechecker
+[02:36:08]   Loaded.
+[02:36:08]  Loaded 6 plugins.
+
+[02:36:08] [artwork:crc] lvpdpc2.dff CRC = 0xFBD1EA7C
+[02:36:08] [artwork:crc] lvpdpc2.txd CRC = 0xDC92731E
+[02:36:08] [artwork:crc] lapdpd2.dff CRC = 0xA558D422
+[02:36:08] [artwork:crc] lapdpd2.txd CRC = 0xA442E2DA
+[02:36:08] [artwork:crc] wallzzz.dff CRC = 0x4BC6EDFF
+[02:36:08] [artwork:crc] wallzzz.txd CRC = 0x235E3EEB
+[02:36:08] 
+[02:36:08] Filterscripts
+[02:36:08] ---------------
+[02:36:08]   Loaded 0 filterscripts.
+
+[02:36:08] TDZ Local: MySQL Connection was successful.
+[02:36:08] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
+[02:36:08] Script[gamemodes/TDZ.amx]: Run time error 20: "Invalid index parameter (bad entry point)"
+[02:36:08] Number of vehicle models: 0
+[02:36:08] plugin.bcrypt: The plugin is up-to-date.
+[02:36:16] [connection] incoming connection: 25.1.2.125:50356 id: 0
+[02:36:16] [join] Shady_Dev has joined the server (0:25.1.2.125)
+[02:36:42] [chat] [Shady_Dev]: aha
+[02:36:47] [chat] [Shady_Dev]: ONANAANAN
+[02:36:51] [part] Shady_Dev has left the server (0:1)

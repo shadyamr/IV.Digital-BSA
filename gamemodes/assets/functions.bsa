@@ -1,0 +1,71 @@
+Function:CheckAccount(playerid)
+{
+	new string[300];
+	if(cache_num_rows())
+	{
+		format(string, sizeof(string), "{FFFFFF}Welcome back to {AFAFAF}Server{FFFFFF}%s. Please input your password below to log-in.", GetName(playerid));
+		Dialog_Show(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, "Login to the server", string, "Login", "Dip");
+	}
+	else
+	{
+		format(string, sizeof(string), "{FFFFFF}Welcome to our server, %s. Please type a strong password below to continue.", GetName(playerid));
+		Dialog_Show(playerid, DIALOG_REGISTER, DIALOG_STYLE_PASSWORD, "Register to the server", string, "Register", "Dip");
+	}
+	return true;
+}
+
+Function:OnPasswordHashed(playerid)
+{
+	new hash[BCRYPT_HASH_LENGTH], query[300];
+	bcrypt_get_hash(hash);
+	mysql_format(Database, query, sizeof(query), "INSERT INTO `players` (`Username`, `Password`, `IPAddress`, `Cash`, `Kills`, `Deaths`) VALUES ('%e', '%e', '%e', 0, 0, 0)", GetName(playerid), hash, ReturnIP(playerid));
+	mysql_tquery(Database, query, "OnPlayerRegister", "d", playerid);
+	return true;
+}
+
+Function:OnPlayerRegister(playerid)
+{
+	SpawnPlayer(playerid);
+	SendClientMessage(playerid, -1, "You have been successfully registered in our server.");
+	return true;	
+}
+
+Function:OnPasswordChecked(playerid)
+{
+	new bool:match = bcrypt_is_equal();
+	if(match)
+	{
+		new query[300];
+		mysql_format(Database, query, sizeof(query), "SELECT * FROM `players` WHERE `Username` = '%e'", GetName(playerid));
+		mysql_tquery(Database, query, "OnPlayerLoad", "d", playerid);
+	}
+	else
+	{
+		new string[100];
+		format(string, sizeof(string), "Wrong Password!\nPlease type your correct password below.");
+		Dialog_Show(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, "Login to our server", string, "Register", "Dip");
+	}
+	return true;
+}
+
+Function:OnPlayerLoad(playerid)
+{
+	cache_get_value_name_int(0, "ID", PlayerInfo[playerid][user_id]);
+	cache_get_value_name_int(0, "Cash", PlayerInfo[playerid][user_cash]);
+	cache_get_value_name_int(0, "Kills", PlayerInfo[playerid][user_kills]);
+	cache_get_value_name_int(0, "Deaths", PlayerInfo[playerid][user_deaths]);
+
+	LoggedIn[playerid] = true;
+	SendClientMessage(playerid, -1, "Welcome back to our server.");
+	return true;
+}
+
+Function:OnPasswordChanged(playerid)
+{
+	new hash[BCRYPT_HASH_LENGTH], query[300];
+	bcrypt_get_hash(hash);
+	mysql_format(Database, query, sizeof(query), "UPDATE `players` SET `Password` = '%e' WHERE `Username` = '%e'", hash, GetName(playerid));
+	mysql_query(Database, query);
+	SendClientMessage(playerid, -1, "You have successfully changed your password.");
+	return true;
+}
