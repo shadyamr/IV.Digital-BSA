@@ -13,11 +13,9 @@
 	SendClientMessage(%0, COLOR_LIGHTRED, "[SERVER]:{FFFFFF} "%1)
 
 #define	    BCRYPT_COST	    		12
-#define 	TEAM_TERRORIST			0
-#define 	TEAM_COUNTER_TERRORIST	1
 
-#include "../gamemodes/assets/colors.tdz"
-#include "../gamemodes/assets/mysql.tdz"
+#include "../gamemodes/assets/colors.bsa"
+#include "../gamemodes/assets/mysql.bsa"
 
 enum PlayerData
 {
@@ -27,4 +25,4 @@ enum PlayerData
 	user_deaths
 };
 
-new MySQL:Database, bool:LoggedIn[MAX_PLAYERS], PlayerInfo[MAX_PLAYERS][PlayerData], gTeam[MAX_PLAYERS];
+new MySQL:Database, bool:LoggedIn[MAX_PLAYERS], PlayerInfo[MAX_PLAYERS][PlayerData];

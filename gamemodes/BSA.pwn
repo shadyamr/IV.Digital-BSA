@@ -31,10 +31,8 @@
 #include <sscanf2>
 #include <streamer>
 
-#include "../gamemodes/assets.colors.bsa"
 #include "../gamemodes/assets/defvarenu.bsa"
 #include "../gamemodes/assets/functions.bsa"
-#include "../gamemodes/assets/mysql.bsa"
 
 public OnGameModeInit()
 {
