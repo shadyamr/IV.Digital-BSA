@@ -2407,3 +2407,13 @@ Console input: gmx
 [00:54:13] plugin.bcrypt: The plugin is up-to-date.
 [00:54:37] [chat] [Shady]: a7a
 [00:54:40] [chat] [Shady]: a7aaaaaaaaaaaaaa
+Console input: gmx
+[00:57:35] BSA Local: MySQL Connection was successful.
+[00:57:35] Number of vehicle models: 0
+[00:57:36] plugin.bcrypt: The plugin is up-to-date.
+[00:58:07] [chat] [Shady]: Michael J. Aachen is naughty boy.
+[00:58:18] [chat] [Shady]: lmfao
+[00:58:29] [chat] [Shady]: I'll still add textdraws and adjust the lobby.
+[00:58:30] [chat] [Shady]: So yeah
+[00:58:33] [chat] [Shady]: xDD
+[00:59:09] [part] Shady has left the server (0:1)
