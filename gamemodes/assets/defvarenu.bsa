@@ -10,11 +10,12 @@
 	SendClientMessage(%0, COLOR_GREEN, "[SUCCESS]:{FFFFFF} "%1)
 
 #define SendServerMessage(%0,%1) \
-	SendClientMessage(%0, COLOR_LIGHTRED, "[SERVER]:{FFFFFF} "%1)
+	SendClientMessage(%0, COLOR_IVDIGITAL, "[SERVER]:{FFFFFF} "%1)
 
 #define	    BCRYPT_COST	    		12
 
 #include "../gamemodes/assets/colors.bsa"
+#include "../gamemodes/assets/discord.bsa"
 #include "../gamemodes/assets/mysql.bsa"
 
 enum PlayerData
@@ -25,4 +26,4 @@ enum PlayerData
 	user_deaths
 };
 
-new MySQL:Database, bool:LoggedIn[MAX_PLAYERS], PlayerInfo[MAX_PLAYERS][PlayerData];
+new MySQL:Database, bool:LoggedIn[MAX_PLAYERS], PlayerInfo[MAX_PLAYERS][PlayerData], LoginChance[MAX_PLAYERS], InLobby[MAX_PLAYERS];
