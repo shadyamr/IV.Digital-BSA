@@ -1,3 +1,5 @@
+#define         COLOR_IVDIGITAL             0x3498DBFF
+
 #define 		COLOR_INDIANRED 			0xCD5C5CFF
 #define 		COLOR_LIGHTCORAL 			0xF08080FF
 #define 		COLOR_SALMON 				0xFA8072FF
