@@ -1,0 +1,23 @@
+
+
+LoginScreen(playerid)
+{
+    BSALogin_BG[0] = CreatePlayerTextDraw(playerid, -1.120005, -0.166680, "mdl-2005:bsabg");
+    PlayerTextDrawLetterSize(playerid, BSALogin_BG[0], 0.000000, 0.000000);
+    PlayerTextDrawTextSize(playerid, BSALogin_BG[0], 674.000000, 482.000000);
+    PlayerTextDrawAlignment(playerid, BSALogin_BG[0], 1);
+    PlayerTextDrawColor(playerid, BSALogin_BG[0], -1);
+    PlayerTextDrawSetShadow(playerid, BSALogin_BG[0], 0);
+    PlayerTextDrawSetOutline(playerid, BSALogin_BG[0], 0);
+    PlayerTextDrawBackgroundColor(playerid, BSALogin_BG[0], 255);
+    PlayerTextDrawFont(playerid, BSALogin_BG[0], 4);
+    PlayerTextDrawSetProportional(playerid, BSALogin_BG[0], 0);
+    PlayerTextDrawSetShadow(playerid, BSALogin_BG[0], 0);
+
+    TextDrawShowForPlayer(playerid, BSALogin_BG);
+}
+
+HideLoginScreen()
+{
+    TextDrawHideForPlayer(playerid, BSALogin_BG)
+}
