@@ -1,0 +1,25 @@
+new DCC_Channel:logchannel, dstr[512];
+
+Function:DiscordInit()
+{
+	if(_:logchannel == 0) logchannel = DCC_FindChannelById("557714574883684353");
+    format(dstr, sizeof(dstr), "BSA Local: Server has been started. (%s)", GetDate());
+	DCC_SendChannelMessage(logchannel, dstr);
+    return true;
+}
+
+Function:DiscordExit()
+{
+	if(_:logchannel == 0) logchannel = DCC_FindChannelById("557714574883684353");
+    format(dstr, sizeof(dstr), "BSA Local: Server has been shutted down. (%s)", GetDate());
+	DCC_SendChannelMessage(logchannel, dstr);
+    return true;
+}
+
+/*Function:DiscordRestart()
+{
+	if(_:logchannel == 0) logchannel = DCC_FindChannelById("557714574883684353");
+    format(dstr, sizeof(dstr), "BSA Local: Server has been restarted. (%s)", GetDate());
+	DCC_SendChannelMessage(logchannel, dstr);
+    return true;
+}*/
