@@ -2417,3 +2417,787 @@ Console input: gmx
 [00:58:30] [chat] [Shady]: So yeah
 [00:58:33] [chat] [Shady]: xDD
 [00:59:09] [part] Shady has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[01:10:46] filterscripts = ""  (string)
+[01:10:46] 
+[01:10:46] Server Plugins
+[01:10:46] --------------
+[01:10:46]  Loading plugin: bcrypt-samp
+[01:10:47]   plugin.bcrypt v2.2.3 was loaded.
+[01:10:47]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[01:10:47]   Loaded.
+[01:10:47]  Loading plugin: crashdetect
+[01:10:47]   CrashDetect plugin 4.19.4
+[01:10:47]   Loaded.
+[01:10:47]  Loading plugin: discord
+[01:10:49]  >> plugin.dc-connector: 0.2.4 successfully loaded.
+[01:10:49]   Loaded.
+[01:10:49]  Loading plugin: mysql
+[01:10:49]  >> plugin.mysql: R41-4 successfully loaded.
+[01:10:49]   Loaded.
+[01:10:49]  Loading plugin: sscanf
+[01:10:49] 
+
+[01:10:49]  ===============================
+
+[01:10:49]       sscanf plugin loaded.     
+
+[01:10:49]          Version:  2.8.3        
+
+[01:10:49]   (c) 2018 Alex "Y_Less" Cole  
+
+[01:10:50]  ===============================
+
+[01:10:50]   Loaded.
+[01:10:50]  Loading plugin: streamer
+[01:10:50] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[01:10:50]   Loaded.
+[01:10:50]  Loading plugin: nativechecker
+[01:10:50]   Loaded.
+[01:10:50]  Loaded 7 plugins.
+
+[01:10:50] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[01:10:50] [artwork:crc] bsabg.txd CRC = 0xB635560B
+[01:10:50] 
+[01:10:50] Filterscripts
+[01:10:50] ---------------
+[01:10:50]   Loaded 0 filterscripts.
+
+[01:10:58] BSA Local: MySQL Connection failed, shutting the server down!
+[01:10:58] Number of vehicle models: 0
+[01:10:58] --- Server Shutting Down.
+[01:10:58] plugin.bcrypt: Plugin unloaded.
+[01:10:58] plugin.dc-connector: Unloading plugin...
+[01:10:58] plugin.dc-connector: Plugin unloaded.
+[01:10:58] plugin.mysql: Unloading plugin...
+[01:10:58] plugin.mysql: Plugin unloaded.
+[01:10:58] 
+
+[01:10:58]  ===============================
+
+[01:10:58]      sscanf plugin unloaded.    
+
+[01:10:58]  ===============================
+
+[01:10:58] 
+
+*** Streamer Plugin v2.9.4 by Incognito unloaded ***
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[01:12:32] filterscripts = ""  (string)
+[01:12:32] 
+[01:12:32] Server Plugins
+[01:12:32] --------------
+[01:12:32]  Loading plugin: bcrypt-samp
+[01:12:32]   plugin.bcrypt v2.2.3 was loaded.
+[01:12:32]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[01:12:32]   Loaded.
+[01:12:32]  Loading plugin: crashdetect
+[01:12:32]   CrashDetect plugin 4.19.4
+[01:12:32]   Loaded.
+[01:12:32]  Loading plugin: discord
+[01:12:34]  >> plugin.dc-connector: 0.2.4 successfully loaded.
+[01:12:34]   Loaded.
+[01:12:34]  Loading plugin: mysql
+[01:12:34]  >> plugin.mysql: R41-4 successfully loaded.
+[01:12:34]   Loaded.
+[01:12:34]  Loading plugin: sscanf
+[01:12:34] 
+
+[01:12:34]  ===============================
+
+[01:12:34]       sscanf plugin loaded.     
+
+[01:12:34]          Version:  2.8.3        
+
+[01:12:34]   (c) 2018 Alex "Y_Less" Cole  
+
+[01:12:34]  ===============================
+
+[01:12:34]   Loaded.
+[01:12:34]  Loading plugin: streamer
+[01:12:34] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[01:12:34]   Loaded.
+[01:12:34]  Loading plugin: nativechecker
+[01:12:34]   Loaded.
+[01:12:34]  Loaded 7 plugins.
+
+[01:12:34] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[01:12:34] [artwork:crc] bsabg.txd CRC = 0xB635560B
+[01:12:34] 
+[01:12:34] Filterscripts
+[01:12:34] ---------------
+[01:12:34]   Loaded 0 filterscripts.
+
+[01:12:34] BSA Local: MySQL Connection was successful.
+[01:12:34] Number of vehicle models: 0
+[01:12:34] plugin.bcrypt: The plugin is up-to-date.
+[01:13:35] [connection] incoming connection: 192.168.1.4:59003 id: 0
+[01:13:35] [join] Shady has joined the server (0:192.168.1.4)
+Console input: gmx
+[01:26:54] BSA Local: MySQL Connection was successful.
+[01:26:55] Number of vehicle models: 0
+[01:26:55] plugin.bcrypt: The plugin is up-to-date.
+[01:29:23] [chat] [Shady]: .
+[01:39:43] [chat] [Shady]: .
+[01:42:15] [part] Shady has left the server (0:1)
+[01:59:41] --- Server Shutting Down.
+[01:59:41] plugin.bcrypt: Plugin unloaded.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[01:59:51] filterscripts = ""  (string)
+[01:59:51] 
+[01:59:51] Server Plugins
+[01:59:51] --------------
+[01:59:51]  Loading plugin: bcrypt-samp
+[01:59:51]   plugin.bcrypt v2.2.3 was loaded.
+[01:59:51]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[01:59:51]   Loaded.
+[01:59:51]  Loading plugin: crashdetect
+[01:59:51]   CrashDetect plugin 4.19.4
+[01:59:51]   Loaded.
+[01:59:51]  Loading plugin: discord
+[01:59:53]  >> plugin.dc-connector: 0.2.4 successfully loaded.
+[01:59:53]   Loaded.
+[01:59:53]  Loading plugin: mysql
+[01:59:53]  >> plugin.mysql: R41-4 successfully loaded.
+[01:59:53]   Loaded.
+[01:59:53]  Loading plugin: sscanf
+[01:59:53] 
+
+[01:59:53]  ===============================
+
+[01:59:53]       sscanf plugin loaded.     
+
+[01:59:53]          Version:  2.8.3        
+
+[01:59:53]   (c) 2018 Alex "Y_Less" Cole  
+
+[01:59:53]  ===============================
+
+[01:59:53]   Loaded.
+[01:59:53]  Loading plugin: streamer
+[01:59:53] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[01:59:53]   Loaded.
+[01:59:53]  Loading plugin: nativechecker
+[01:59:53]   Loaded.
+[01:59:53]  Loaded 7 plugins.
+
+[01:59:53] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[01:59:53] [artwork:crc] bsabg.txd CRC = 0xB635560B
+[01:59:53] 
+[01:59:53] Filterscripts
+[01:59:53] ---------------
+[01:59:53]   Loaded 0 filterscripts.
+
+[01:59:53] BSA Local: MySQL Connection was successful.
+[01:59:53] Number of vehicle models: 0
+[01:59:53] plugin.bcrypt: The plugin is up-to-date.
+[02:00:03] [connection] incoming connection: 192.168.1.4:51441 id: 0
+[02:00:03] [join] Shady has joined the server (0:192.168.1.4)
+[02:00:20] [chat] [Shady]: .
+[02:01:19] [part] Shady has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[02:02:26] filterscripts = ""  (string)
+[02:02:26] 
+[02:02:26] Server Plugins
+[02:02:26] --------------
+[02:02:26]  Loading plugin: bcrypt-samp
+[02:02:26]   plugin.bcrypt v2.2.3 was loaded.
+[02:02:26]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[02:02:26]   Loaded.
+[02:02:26]  Loading plugin: crashdetect
+[02:02:26]   CrashDetect plugin 4.19.4
+[02:02:26]   Loaded.
+[02:02:26]  Loading plugin: discord
+[02:02:28]  >> plugin.dc-connector: 0.2.4 successfully loaded.
+[02:02:28]   Loaded.
+[02:02:28]  Loading plugin: mysql
+[02:02:28]  >> plugin.mysql: R41-4 successfully loaded.
+[02:02:28]   Loaded.
+[02:02:28]  Loading plugin: sscanf
+[02:02:28] 
+
+[02:02:28]  ===============================
+
+[02:02:28]       sscanf plugin loaded.     
+
+[02:02:28]          Version:  2.8.3        
+
+[02:02:28]   (c) 2018 Alex "Y_Less" Cole  
+
+[02:02:28]  ===============================
+
+[02:02:28]   Loaded.
+[02:02:28]  Loading plugin: streamer
+[02:02:28] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:02:28]   Loaded.
+[02:02:28]  Loading plugin: nativechecker
+[02:02:28]   Loaded.
+[02:02:28]  Loaded 7 plugins.
+
+[02:02:28] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[02:02:28] [artwork:crc] bsabg.txd CRC = 0xB635560B
+[02:02:28] 
+[02:02:28] Filterscripts
+[02:02:28] ---------------
+[02:02:28]   Loaded 0 filterscripts.
+
+[02:02:28] BSA Local: MySQL Connection was successful.
+[02:02:28] Number of vehicle models: 0
+[02:02:28] plugin.bcrypt: The plugin is up-to-date.
+[02:02:36] [connection] incoming connection: 192.168.1.4:52563 id: 0
+[02:02:36] [join] Shady has joined the server (0:192.168.1.4)
+[02:03:17] [chat] [Shady]: lala
+[02:03:19] [chat] [Shady]: lalalalala
+[02:03:21] [part] Shady has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[02:21:39] filterscripts = ""  (string)
+[02:21:39] 
+[02:21:39] Server Plugins
+[02:21:39] --------------
+[02:21:39]  Loading plugin: bcrypt-samp
+[02:21:39]   plugin.bcrypt v2.2.3 was loaded.
+[02:21:39]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[02:21:39]   Loaded.
+[02:21:39]  Loading plugin: crashdetect
+[02:21:39]   CrashDetect plugin 4.19.4
+[02:21:39]   Loaded.
+[02:21:39]  Loading plugin: discord
+[02:21:41]  >> plugin.dc-connector: 0.2.4 successfully loaded.
+[02:21:41]   Loaded.
+[02:21:41]  Loading plugin: mysql
+[02:21:41]  >> plugin.mysql: R41-4 successfully loaded.
+[02:21:41]   Loaded.
+[02:21:41]  Loading plugin: sscanf
+[02:21:41] 
+
+[02:21:41]  ===============================
+
+[02:21:41]       sscanf plugin loaded.     
+
+[02:21:41]          Version:  2.8.3        
+
+[02:21:41]   (c) 2018 Alex "Y_Less" Cole  
+
+[02:21:41]  ===============================
+
+[02:21:41]   Loaded.
+[02:21:41]  Loading plugin: streamer
+[02:21:41] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:21:41]   Loaded.
+[02:21:41]  Loading plugin: nativechecker
+[02:21:41]   Loaded.
+[02:21:41]  Loaded 7 plugins.
+
+[02:21:41] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[02:21:41] [artwork:crc] bsabg.txd CRC = 0xB635560B
+[02:21:41] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[02:21:41] [artwork:crc] bsa.txd CRC = 0x0
+[02:21:41] [artwork:error] Bad file: bsa.txd
+[02:21:41] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[02:21:41] [artwork:crc] ranks.txd CRC = 0x0
+[02:21:41] [artwork:error] Bad file: ranks.txd
+[02:21:41] 
+[02:21:41] Filterscripts
+[02:21:41] ---------------
+[02:21:41]   Loaded 0 filterscripts.
+
+[02:21:41] BSA Local: MySQL Connection was successful.
+[02:21:41] Number of vehicle models: 0
+[02:21:41] plugin.bcrypt: The plugin is up-to-date.
+[02:21:51] [connection] incoming connection: 192.168.1.4:53873 id: 0
+[02:21:51] [join] Shady has joined the server (0:192.168.1.4)
+[02:22:26] [part] Shady has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[02:22:55] filterscripts = ""  (string)
+[02:22:55] 
+[02:22:55] Server Plugins
+[02:22:55] --------------
+[02:22:55]  Loading plugin: bcrypt-samp
+[02:22:55]   plugin.bcrypt v2.2.3 was loaded.
+[02:22:55]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[02:22:55]   Loaded.
+[02:22:55]  Loading plugin: crashdetect
+[02:22:55]   CrashDetect plugin 4.19.4
+[02:22:55]   Loaded.
+[02:22:55]  Loading plugin: discord
+[02:22:56]  >> plugin.dc-connector: 0.2.4 successfully loaded.
+[02:22:56]   Loaded.
+[02:22:56]  Loading plugin: mysql
+[02:22:56]  >> plugin.mysql: R41-4 successfully loaded.
+[02:22:56]   Loaded.
+[02:22:56]  Loading plugin: sscanf
+[02:22:56] 
+
+[02:22:56]  ===============================
+
+[02:22:56]       sscanf plugin loaded.     
+
+[02:22:56]          Version:  2.8.3        
+
+[02:22:56]   (c) 2018 Alex "Y_Less" Cole  
+
+[02:22:56]  ===============================
+
+[02:22:56]   Loaded.
+[02:22:56]  Loading plugin: streamer
+[02:22:56] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:22:56]   Loaded.
+[02:22:56]  Loading plugin: nativechecker
+[02:22:56]   Loaded.
+[02:22:56]  Loaded 7 plugins.
+
+[02:22:56] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[02:22:56] [artwork:crc] bsabg.txd CRC = 0xB635560B
+[02:22:56] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[02:22:56] [artwork:crc] bsa.txd CRC = 0x842247E8
+[02:22:56] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[02:22:56] [artwork:crc] ranks.txd CRC = 0x48E5D594
+[02:22:56] 
+[02:22:56] Filterscripts
+[02:22:56] ---------------
+[02:22:56]   Loaded 0 filterscripts.
+
+[02:22:57] BSA Local: MySQL Connection was successful.
+[02:22:57] Number of vehicle models: 0
+[02:22:57] plugin.bcrypt: The plugin is up-to-date.
+[02:23:05] [connection] incoming connection: 192.168.1.4:59132 id: 0
+[02:23:05] [join] Shady has joined the server (0:192.168.1.4)
+Console input: gmx
+[02:26:59] BSA Local: MySQL Connection was successful.
+[02:26:59] Number of vehicle models: 0
+[02:27:01] plugin.bcrypt: The plugin is up-to-date.
+[02:27:42] [chat] [Shady]: -
+[02:28:06] [part] Shady has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[02:36:02] filterscripts = ""  (string)
+[02:36:02] 
+[02:36:02] Server Plugins
+[02:36:02] --------------
+[02:36:02]  Loading plugin: bcrypt-samp
+[02:36:02]   plugin.bcrypt v2.2.3 was loaded.
+[02:36:02]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[02:36:02]   Loaded.
+[02:36:02]  Loading plugin: crashdetect
+[02:36:02]   CrashDetect plugin 4.19.4
+[02:36:02]   Loaded.
+[02:36:02]  Loading plugin: discord
+[02:36:05]  >> plugin.dc-connector: 0.2.4 successfully loaded.
+[02:36:05]   Loaded.
+[02:36:05]  Loading plugin: mysql
+[02:36:05]  >> plugin.mysql: R41-4 successfully loaded.
+[02:36:05]   Loaded.
+[02:36:05]  Loading plugin: sscanf
+[02:36:05] 
+
+[02:36:05]  ===============================
+
+[02:36:05]       sscanf plugin loaded.     
+
+[02:36:05]          Version:  2.8.3        
+
+[02:36:05]   (c) 2018 Alex "Y_Less" Cole  
+
+[02:36:05]  ===============================
+
+[02:36:05]   Loaded.
+[02:36:05]  Loading plugin: streamer
+[02:36:05] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:36:05]   Loaded.
+[02:36:05]  Loading plugin: nativechecker
+[02:36:05]   Loaded.
+[02:36:05]  Loaded 7 plugins.
+
+[02:36:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[02:36:05] [artwork:crc] bsabg.txd CRC = 0xB635560B
+[02:36:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[02:36:05] [artwork:crc] bsa.txd CRC = 0x842247E8
+[02:36:05] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[02:36:05] [artwork:crc] ranks.txd CRC = 0x48E5D594
+[02:36:05] 
+[02:36:05] Filterscripts
+[02:36:05] ---------------
+[02:36:05]   Loaded 0 filterscripts.
+
+[02:36:05] BSA Local: MySQL Connection was successful.
+[02:36:05] Number of vehicle models: 0
+[02:36:05] plugin.bcrypt: The plugin is up-to-date.
+[02:36:15] [connection] incoming connection: 192.168.1.4:58102 id: 0
+[02:36:15] [join] Shady has joined the server (0:192.168.1.4)
+[02:38:43] [part] Shady has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[02:38:46] filterscripts = ""  (string)
+[02:38:46] 
+[02:38:46] Server Plugins
+[02:38:46] --------------
+[02:38:46]  Loading plugin: bcrypt-samp
+[02:38:46]   plugin.bcrypt v2.2.3 was loaded.
+[02:38:46]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[02:38:46]   Loaded.
+[02:38:46]  Loading plugin: crashdetect
+[02:38:46]   CrashDetect plugin 4.19.4
+[02:38:46]   Loaded.
+[02:38:46]  Loading plugin: discord
+[02:38:47]  >> plugin.dc-connector: 0.2.4 successfully loaded.
+[02:38:47]   Loaded.
+[02:38:47]  Loading plugin: mysql
+[02:38:47]  >> plugin.mysql: R41-4 successfully loaded.
+[02:38:47]   Loaded.
+[02:38:47]  Loading plugin: sscanf
+[02:38:47] 
+
+[02:38:47]  ===============================
+
+[02:38:47]       sscanf plugin loaded.     
+
+[02:38:47]          Version:  2.8.3        
+
+[02:38:47]   (c) 2018 Alex "Y_Less" Cole  
+
+[02:38:47]  ===============================
+
+[02:38:47]   Loaded.
+[02:38:47]  Loading plugin: streamer
+[02:38:47] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[02:38:47]   Loaded.
+[02:38:47]  Loading plugin: nativechecker
+[02:38:47]   Loaded.
+[02:38:47]  Loaded 7 plugins.
+
+[02:38:47] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[02:38:47] [artwork:crc] bsabg.txd CRC = 0xB635560B
+[02:38:47] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[02:38:47] [artwork:crc] bsa.txd CRC = 0x842247E8
+[02:38:47] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[02:38:47] [artwork:crc] ranks.txd CRC = 0x48E5D594
+[02:38:47] 
+[02:38:47] Filterscripts
+[02:38:47] ---------------
+[02:38:47]   Loaded 0 filterscripts.
+
+[02:38:47] BSA Local: MySQL Connection was successful.
+[02:38:47] Number of vehicle models: 0
+[02:38:48] plugin.bcrypt: The plugin is up-to-date.
+[02:38:55] [connection] incoming connection: 192.168.1.4:49154 id: 0
+[02:38:55] [join] Shady has joined the server (0:192.168.1.4)
+Console input: gmx
+[02:41:17] BSA Local: MySQL Connection was successful.
+[02:41:17] Number of vehicle models: 0
+[02:41:17] plugin.bcrypt: The plugin is up-to-date.
+[03:00:52] [part] Shady has left the server (0:1)
+Console input: exit
+[03:40:05] --- Server Shutting Down.
+[03:40:06] plugin.bcrypt: Plugin unloaded.
+[03:40:11] plugin.dc-connector: Unloading plugin...
+[03:40:12] plugin.dc-connector: Plugin unloaded.
+[03:40:12] plugin.mysql: Unloading plugin...
+[03:40:13] plugin.mysql: Plugin unloaded.
+[03:40:13] 
+
+[03:40:13]  ===============================
+
+[03:40:13]      sscanf plugin unloaded.    
+
+[03:40:13]  ===============================
+
+[03:40:14] 
+
+*** Streamer Plugin v2.9.4 by Incognito unloaded ***
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[14:48:17] filterscripts = ""  (string)
+[14:48:17] 
+[14:48:17] Server Plugins
+[14:48:17] --------------
+[14:48:17]  Loading plugin: bcrypt-samp
+[14:48:18]   plugin.bcrypt v2.2.3 was loaded.
+[14:48:18]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[14:48:18]   Loaded.
+[14:48:18]  Loading plugin: crashdetect
+[14:48:18]   CrashDetect plugin 4.19.4
+[14:48:18]   Loaded.
+[14:48:18]  Loading plugin: discord
+[14:48:20]  >> plugin.dc-connector: 0.2.4 successfully loaded.
+[14:48:20]   Loaded.
+[14:48:20]  Loading plugin: mysql
+[14:48:20]  >> plugin.mysql: R41-4 successfully loaded.
+[14:48:20]   Loaded.
+[14:48:20]  Loading plugin: sscanf
+[14:48:21] 
+
+[14:48:21]  ===============================
+
+[14:48:21]       sscanf plugin loaded.     
+
+[14:48:21]          Version:  2.8.3        
+
+[14:48:21]   (c) 2018 Alex "Y_Less" Cole  
+
+[14:48:21]  ===============================
+
+[14:48:21]   Loaded.
+[14:48:21]  Loading plugin: streamer
+[14:48:21] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[14:48:21]   Loaded.
+[14:48:21]  Loading plugin: nativechecker
+[14:48:21]   Loaded.
+[14:48:21]  Loaded 7 plugins.
+
+[14:48:21] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[14:48:21] [artwork:crc] bsabg.txd CRC = 0xB635560B
+[14:48:21] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[14:48:21] [artwork:crc] bsa.txd CRC = 0x842247E8
+[14:48:21] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[14:48:21] [artwork:crc] ranks.txd CRC = 0x48E5D594
+[14:48:21] 
+[14:48:21] Filterscripts
+[14:48:21] ---------------
+[14:48:21]   Loaded 0 filterscripts.
+
+[14:48:21] BSA Local: MySQL Connection was successful.
+[14:48:21] Number of vehicle models: 0
+[14:48:22] plugin.bcrypt: The plugin is up-to-date.
+[14:49:58] [connection] incoming connection: 192.168.1.4:58133 id: 0
+[14:49:58] [join] Shady has joined the server (0:192.168.1.4)
+[14:50:34] [part] Shady has left the server (0:1)
+Console input: gmx
+[15:01:51] BSA Local: MySQL Connection was successful.
+[15:01:51] Number of vehicle models: 0
+[15:01:51] plugin.bcrypt: The plugin is up-to-date.
+[15:03:03] [connection] incoming connection: 192.168.1.4:59864 id: 0
+[15:03:03] [join] Shady has joined the server (0:192.168.1.4)
+[15:03:30] [part] Shady has left the server (0:1)
+Console input: say
+Console input: say 4rmt
+Console input: exit
+[16:28:32] --- Server Shutting Down.
+[16:28:33] plugin.bcrypt: Plugin unloaded.
+[16:28:33] plugin.dc-connector: Unloading plugin...
+[16:28:33] plugin.dc-connector: Plugin unloaded.
+[16:28:33] plugin.mysql: Unloading plugin...
+[16:28:33] plugin.mysql: Plugin unloaded.
+[16:28:33] 
+
+[16:28:33]  ===============================
+
+[16:28:33]      sscanf plugin unloaded.    
+
+[16:28:33]  ===============================
+
+[16:28:33] 
+
+*** Streamer Plugin v2.9.4 by Incognito unloaded ***
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[13:16:05] filterscripts = ""  (string)
+[13:16:05] 
+[13:16:05] Server Plugins
+[13:16:05] --------------
+[13:16:05]  Loading plugin: bcrypt-samp
+[13:16:05]   plugin.bcrypt v2.2.3 was loaded.
+[13:16:05]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[13:16:05]   Loaded.
+[13:16:05]  Loading plugin: crashdetect
+[13:16:06]   CrashDetect plugin 4.19.4
+[13:16:06]   Loaded.
+[13:16:06]  Loading plugin: discord
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.DL-R1, (C)2005-2018 SA-MP Team
+
+[03:12:24] filterscripts = ""  (string)
+[03:12:24] 
+[03:12:24] Server Plugins
+[03:12:24] --------------
+[03:12:24]  Loading plugin: bcrypt-samp
+[03:12:24]   plugin.bcrypt v2.2.3 was loaded.
+[03:12:24]   plugin.bcrypt: 2 cores detected, 1 threads will be used.
+[03:12:24]   Loaded.
+[03:12:24]  Loading plugin: crashdetect
+[03:12:24]   CrashDetect plugin 4.19.4
+[03:12:24]   Loaded.
+[03:12:24]  Loading plugin: discord
+[03:12:27]  >> plugin.dc-connector: 0.2.4 successfully loaded.
+[03:12:27]   Loaded.
+[03:12:27]  Loading plugin: mysql
+[03:12:27]  >> plugin.mysql: R41-4 successfully loaded.
+[03:12:27]   Loaded.
+[03:12:27]  Loading plugin: sscanf
+[03:12:27] 
+
+[03:12:27]  ===============================
+
+[03:12:27]       sscanf plugin loaded.     
+
+[03:12:27]          Version:  2.8.3        
+
+[03:12:27]   (c) 2018 Alex "Y_Less" Cole  
+
+[03:12:27]  ===============================
+
+[03:12:27]   Loaded.
+[03:12:27]  Loading plugin: streamer
+[03:12:27] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[03:12:27]   Loaded.
+[03:12:27]  Loading plugin: nativechecker
+[03:12:27]   Loaded.
+[03:12:27]  Loaded 7 plugins.
+
+[03:12:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[03:12:27] [artwork:crc] bsabg.txd CRC = 0xB635560B
+[03:12:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[03:12:27] [artwork:crc] bsa.txd CRC = 0x842247E8
+[03:12:27] [artwork:crc] object.dff CRC = 0xDCFCC14C
+[03:12:27] [artwork:crc] ranks.txd CRC = 0x48E5D594
+[03:12:27] 
+[03:12:27] Filterscripts
+[03:12:27] ---------------
+[03:12:27]   Loaded 0 filterscripts.
+
+[03:12:27]  
+[03:12:27]  
+[03:12:27]  
+[03:12:27]  ======================================= 
+[03:12:27]  |                                     | 
+[03:12:27]  |        YSI version 4.00.0001        | 
+[03:12:27]  |        By Alex "Y_Less" Cole        | 
+[03:12:27]  |                                     | 
+[03:12:27]  ======================================= 
+[03:12:27]  
+[03:12:34] BSA Local: MySQL Connection was successful.
+[03:12:34] Number of vehicle models: 0
+[03:12:34] plugin.bcrypt: The plugin is up-to-date.
+Console input: exit
+[03:12:44] --- Server Shutting Down.
+[03:12:44] plugin.bcrypt: Plugin unloaded.
+[03:12:44] plugin.dc-connector: Unloading plugin...
+[03:12:44] plugin.dc-connector: Plugin unloaded.
+[03:12:44] plugin.mysql: Unloading plugin...
+[03:12:44] plugin.mysql: Plugin unloaded.
+[03:12:44] 
+
+[03:12:44]  ===============================
+
+[03:12:44]      sscanf plugin unloaded.    
+
+[03:12:44]  ===============================
+
+[03:12:44] 
+
+*** Streamer Plugin v2.9.4 by Incognito unloaded ***
+
