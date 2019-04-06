@@ -1,0 +1,2 @@
+#include <YSI\y_hooks>
+#include "assets\anticheat\anti_bot.bsa"
