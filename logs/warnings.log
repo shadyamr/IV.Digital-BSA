@@ -1,5 +1,2 @@
-[00:52:45] [plugins/mysql] mysql_connect: no password specified (e:\Shady\Scripting\IV.Digital-BSA\gamemodes\BSA.pwn:52 -> E:\Shady\Scripting\IV.Digital-BSA\pawno\include\sscanf2.inc:210)
-[00:54:13] [plugins/mysql] mysql_connect: no password specified
-[00:54:13] [plugins/mysql] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'tdz'
-[00:57:35] [plugins/mysql] mysql_connect: no password specified
-[00:57:35] [plugins/mysql] duplicate connection detected: handle id 1 already exists with host = 'localhost', username = 'root' and database = 'tdz'
+[03:12:30] [plugins/mysql] mysql_connect: no password specified (e:\Shady\Scripting\IV.Digital-BSA\gamemodes\BSA.pwn:63 -> E:\Shady\Scripting\IV.Digital-BSA\pawno\include\sscanf2.inc:211 -> E:\Shady\Scripting\IV.Digital-BSA\pawno\include\YSI\..\YSI_Data\..\YSI_Internal\..\YSI_Core\..\YSI_Internal\..\YSI_Server\y_scriptinit.inc:201)
+[03:12:44] [plugins/discord-connector] Error while shutting down SSL on HTTP connection: stream truncated (1)

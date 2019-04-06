@@ -29,13 +29,24 @@
 #include <discord-connector>
 #include <easyDialog>
 #include <foreach>
+#include <geolite>
 #include <izcmd>
 #include <sscanf2>
 #include <streamer>
+#include <YSI\y_hooks>
 
-#include "../gamemodes/assets/defvarenu.bsa"
-#include "../gamemodes/assets/functions.bsa"
-#include "../gamemodes/assets/svrconfig.bsa"
+/* ANTI-CHEAT */
+#include "assets/anticheat/anticheat.bsa"
+
+/* SERVER CONFIGURATION */
+#include "assets/config/svrconfig.bsa"
+
+/* SERVER MAIN FILES */
+#include "assets/server/commands.bsa"
+#include "assets/server/defvarenu.bsa"
+#include "assets/server/discord.bsa"
+#include "assets/server/functions.bsa"
+#include "assets/server/textdraws.bsa"
 
 main( ) { }
 
@@ -46,8 +57,12 @@ public OnGameModeInit()
     SendRconCommand("weburl "SVR_WEBSITE"");
     SendRconCommand("mapname "SVR_LOCATION"");
     SendRconCommand("language "SVR_LANGUAGE"");
-    //SendRconCommand("password "SVR_PASSWORD"");
+    SendRconCommand("password "SVR_PASSWORD"");
 	SetGameModeText(SVR_GMTEXT);
+
+	EnableStuntBonusForAll(0);
+	DisableInteriorEnterExits();
+	UsePlayerPedAnims();
 
 	Database = mysql_connect(MYSQL_HOSTNAME, MYSQL_USERNAME, MYSQL_PASSWORD, MYSQL_DATABASE);
 	if(Database == MYSQL_INVALID_HANDLE || mysql_errno(Database) != 0)
@@ -58,34 +73,39 @@ public OnGameModeInit()
 	}
 
 	mysql_log(ALL);
-	DiscordInit();
+	//DiscordInit();
 	print("BSA Local: MySQL Connection was successful.");
 	return true;
 }
 
 public OnGameModeExit()
 {
-	DiscordExit();
+	return true;
 }
 
 public OnPlayerConnect(playerid)
 {
-	new string[256], query[256];
+	new string[256], country[30];
 	DefaultValues(playerid);
-	SendClientMessage(playerid, COLOR_WHITE, "Welcome to {3498db}Battlefield: San Andreas {FFFFFF}[Version "SVR_VERSION" | "SVR_WEBSITE"]");
 
-	mysql_format(Database, query, sizeof(query), "SELECT * FROM `players` WHERE `Username` = '%e'", GetName(playerid));
-	mysql_tquery(Database, query, "CheckAccount", "d", playerid);
+	GetPlayerCountry(playerid, country, sizeof(country));
+	format(string, sizeof(string), "Welcome to {3498db}Battlefield: San Andreas {FFFFFF}[Version "SVR_VERSION" | "SVR_WEBSITE"]");
+	SendClientMessage(playerid, COLOR_WHITE, string);
+	format(string, sizeof(string), "BSA Local: {FFFFFF}%s{AFAFAF} has joined the server. (Country: {FFFFFF}%s{AFAFAF})", GetName(playerid), country);
+	SendClientMessageToAll(COLOR_GREY, string);
 
-	if(_:logchannel == 0) logchannel = DCC_FindChannelById("557714574883684353");
-	format(string, sizeof(string), "BSA Local: %s has joined the server (IP: %s || %s)", GetName(playerid), ReturnIP(playerid), GetDate());
-	DCC_SendChannelMessage(logchannel, string);
+	CheckAccount(playerid);
+
+	PlayAudioStreamForPlayer(playerid, "https://iv.digital/videos/backup.mp3");
+
+	CreateBSABackground(playerid);
+	CreateLobby(playerid);
 	return true;
 }
 
 public OnPlayerDisconnect(playerid, reason)
 {
-	new query[200], userip[20], str[256];
+	new string[256];
 	new szDisconnectReason[3][] =
     {
         "Timeout/Crash",
@@ -93,14 +113,12 @@ public OnPlayerDisconnect(playerid, reason)
         "Kick/Ban"
     };
 
-	mysql_format(Database, query, sizeof(query), "UPDATE `players` SET `Cash` = '%i', `Kills` = '%i', `Deaths` = '%i' WHERE `ID` = '%i'", PlayerInfo[playerid][user_cash], PlayerInfo[playerid][user_kills], PlayerInfo[playerid][user_deaths], PlayerInfo[playerid][user_id]);
-	mysql_query(Database, query);
+	SavePlayerToDB(playerid);
 	DefaultValues(playerid);
-	GetPlayerIp(playerid, userip, sizeof(userip));
+	KillTextdraws(playerid);
 
-	if(_:logchannel == 0) logchannel = DCC_FindChannelById("557714574883684353");
-	format(str, sizeof(str), "BSA Local: %s has left the server (Reason: %s || %s)", GetName(playerid), szDisconnectReason[reason], ReturnIP(playerid), GetDate());
-	DCC_SendChannelMessage(logchannel, str);
+	format(string, sizeof(string), "BSA Local: %s has left the server. (Reason: %s)", GetName(playerid), szDisconnectReason[reason]);
+	SendClientMessageToAll(COLOR_GREY, string);
 	return true;
 }
 
@@ -114,6 +132,17 @@ public OnPlayerRequestClass(playerid, classid)
 	return true;
 }
 
+public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
+{
+    if(playertextid == BSA_Lobby[3])
+    {
+         SendClientMessage(playerid, 0xFFFFFFAA, "You clicked on a textdraw.");
+         CancelSelectTextDraw(playerid);
+         return true;
+    }
+    return false;
+}
+
 public OnPlayerText(playerid, text[])
 {
 	new msg[256];
@@ -121,6 +150,10 @@ public OnPlayerText(playerid, text[])
 	{
 		format(msg, sizeof(msg), "[Lobby]{FFFFFF} %s: %s", GetName(playerid), text);
 		SendClientMessageToAll(COLOR_LIGHTRED, msg);
+	}
+	else
+	{
+		SendErrorMessage(playerid, "You have not logged in yet!");
 	}
 	return false;
 }
@@ -157,6 +190,46 @@ Dialog:DIALOG_LOGIN(playerid, response, listitem, inputtext[])
 	return true;
 }
 
+Dialog:DIALOG_PASSWORDCHANGE(playerid, response, listitem, inputtext[])
+{
+	if(response)
+	{
+		bcrypt_hash(inputtext, BCRYPT_COST, "OnPasswordChanged", "i", playerid);
+	}
+	return true;
+}
+
+/*public DCC_OnChannelMessage(DCC_Channel:channel, DCC_User:author, const message[])
+{
+	new samp[100 + 1];
+	if(!DCC_GetChannelName(channel, samp))
+		return 0; // invalid channel
+
+	new user_name[32 + 1];
+	if (!DCC_GetUserName(author, user_name))
+		return 0; // invalid user
+
+	new str[145];
+	format(str, sizeof str, "[Discord/%s] %s: %s", samp, user_name, message);
+	SendClientMessageToAll(-1, str);
+	return 1;
+}*/
+
+CMD:discord(playerid, params[])
+{
+	if(!LoggedIn[playerid]) return true;
+	if(isnull(params)) return SendUsageMessage(playerid, "/discord [message]");
+
+	new string[128];
+    format(string, sizeof(string), "[Discord]{FFFFFF} << %s: %s", GetName(playerid), params);
+    SendClientMessageToAll(COLOR_DISCORD, string);
+
+    if(_:logchannel == 0) logchannel = DCC_FindChannelById("558483417189056557");
+	format(string, sizeof(string), "[SA-MP | In Game] %s: %s", GetName(playerid), params);
+	DCC_SendChannelMessage(logchannel, string);
+	return true;
+}
+
 CMD:changepassword(playerid, params[])
 {
 	new string[128];
@@ -171,14 +244,5 @@ CMD:test(playerid, params[])
 	if(_:logchannel == 0) logchannel = DCC_FindChannelById("557714574883684353");
 	format(string, sizeof(string), "Created by Shady and Jack F. Dunford. #");
 	DCC_SendChannelMessage(logchannel, string);
-	return true;
-}
-
-Dialog:DIALOG_PASSWORDCHANGE(playerid, response, listitem, inputtext[])
-{
-	if(response)
-	{
-		bcrypt_hash(inputtext, BCRYPT_COST, "OnPasswordChanged", "i", playerid);
-	}
 	return true;
 }
