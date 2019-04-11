@@ -1,4 +1,5 @@
 #include <YSI\y_hooks>
+
 new DCC_Channel:logchannel, dstr[512];
 
 hook OnScriptInit()
