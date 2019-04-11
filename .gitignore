@@ -1,1 +1,4 @@
 *.db
+server_log.txt
+logs/warnings.log
+*.log
