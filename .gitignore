@@ -2,3 +2,13 @@
 server_log.txt
 logs/warnings.log
 *.log
+*.txt
+*.log
+server_log.txt
+*.log
+*.log
+logs/log-core.log
+*.log
+logs/log-core.log
+*.log
+*.log

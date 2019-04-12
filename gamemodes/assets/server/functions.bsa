@@ -4,32 +4,32 @@
 Function:SaveSQLInt(sqlid, table[], row[], value)
 {
 	new query[512];
-	mysql_format(Database, query, sizeof(query), "UPDATE %e SET %e = %i WHERE ID = %i", table, row, value, sqlid);
-	mysql_tquery(Database, query);
+	mysql_format(sqlConnection, query, sizeof(query), "UPDATE %e SET %e = %i WHERE ID = %i", table, row, value, sqlid);
+	mysql_tquery(sqlConnection, query);
 	return true;
 }
 
 Function:SaveSQLFloat(sqlid, table[], row[], Float:value)
 {
 	new query[512];
-	mysql_format(Database, query, sizeof(query), "UPDATE %e SET %e = %f WHERE ID = %i", table, row, value, sqlid);
-	mysql_tquery(Database, query);
+	mysql_format(sqlConnection, query, sizeof(query), "UPDATE %e SET %e = %f WHERE ID = %i", table, row, value, sqlid);
+	mysql_tquery(sqlConnection, query);
 	return true;
 }
 
 Function:SaveSQLString(sqlid, table[], row[], value[])
 {
 	new query[512];
-	mysql_format(Database, query, sizeof(query), "UPDATE %e SET %e = %s WHERE ID = %i", table, row, value, sqlid);
-	mysql_tquery(Database, query);
+	mysql_format(sqlConnection, query, sizeof(query), "UPDATE %e SET %e = %s WHERE ID = %i", table, row, value, sqlid);
+	mysql_tquery(sqlConnection, query);
 	return true;
 }
 
 Function:CheckAccount(playerid)
 {
 	new query[256];
-	mysql_format(Database, query, sizeof(query), "SELECT * FROM `players` WHERE `Username` = '%e' LIMIT 1", GetName(playerid));
-	mysql_tquery(Database, query, "SQL_CheckAccount", "d", playerid);
+	mysql_format(sqlConnection, query, sizeof(query), "SELECT * FROM `players` WHERE `Username` = '%e' LIMIT 1", GetName(playerid));
+	mysql_tquery(sqlConnection, query, "SQL_CheckAccount", "d", playerid);
 	return true;
 }
 
@@ -81,8 +81,8 @@ Function:OnPasswordHashed(playerid)
 	format(string, sizeof(string), "[SERVER]:{FFFFFF} You have successfully registered to the server as {3498db}%s{FFFFFF}, your account information is now being saved.", GetName(playerid));
 	SendClientMessage(playerid, COLOR_IVDIGITAL, string);
 
-	mysql_format(Database, query, sizeof(query), "INSERT INTO `players` (`Username`, `Password`, `IPAddress`, `RegDate`) VALUES ('%e', '%e', '%e', '%e')", GetName(playerid), hash, ReturnIP(playerid), PlayerInfo[playerid][user_regdate]);
-	mysql_tquery(Database, query, "OnPlayerRegister", "d", playerid);
+	mysql_format(sqlConnection, query, sizeof(query), "INSERT INTO `players` (`Username`, `Password`, `IPAddress`, `RegDate`) VALUES ('%e', '%e', '%e', '%e')", GetName(playerid), hash, ReturnIP(playerid), PlayerInfo[playerid][user_regdate]);
+	mysql_tquery(sqlConnection, query, "OnPlayerRegister", "d", playerid);
 	return true;
 }
 
@@ -101,8 +101,8 @@ Function:OnPasswordChecked(playerid)
 		new query[300], string[256];
 		format(string, sizeof(string), "[SERVER]:{FFFFFF} You have successfully logged in as {3498db}%s{FFFFFF}, your account information is now being loaded.", GetName(playerid));
 		SendClientMessage(playerid, COLOR_IVDIGITAL, string);
-		mysql_format(Database, query, sizeof(query), "SELECT * FROM `players` WHERE `Username` = '%e'", GetName(playerid));
-		mysql_tquery(Database, query, "OnPlayerLoad", "d", playerid);
+		mysql_format(sqlConnection, query, sizeof(query), "SELECT * FROM `players` WHERE `Username` = '%e'", GetName(playerid));
+		mysql_tquery(sqlConnection, query, "OnPlayerLoad", "d", playerid);
 	}
 	else
 	{
@@ -125,6 +125,7 @@ Function:OnPlayerLoad(playerid)
 	cache_get_value_name_int(0, "Kills", PlayerInfo[playerid][user_kills]);
 	cache_get_value_name_int(0, "Deaths", PlayerInfo[playerid][user_deaths]);
 	cache_get_value_name_int(0, "AdminLevel", PlayerInfo[playerid][user_admin]);
+	cache_get_value_name_int(0, "AccessLevel", PlayerInfo[playerid][user_accesslvl]);
 
 	LoggedIn[playerid] = true;
 	SendClientMessage(playerid, COLOR_IVDIGITAL, "[SERVER]:{FFFFFF} Welcome back to our server! Your last login was {3498db}0 days and 0 hours ago {FFFFFF}({3498db}/logins{FFFFFF}).");
@@ -141,6 +142,7 @@ Function:DefaultValues(playerid)
 	PlayerInfo[playerid][user_kills] = 0;
 	PlayerInfo[playerid][user_deaths] = 0;
 	PlayerInfo[playerid][user_admin] = 0;
+	PlayerInfo[playerid][user_accesslvl] = 0;
 	return true;
 }
 
@@ -162,8 +164,8 @@ Function:OnPasswordChanged(playerid)
 {
 	new hash[BCRYPT_HASH_LENGTH], query[300];
 	bcrypt_get_hash(hash);
-	mysql_format(Database, query, sizeof(query), "UPDATE `players` SET `Password` = '%e' WHERE `Username` = '%e' LIMIT 1", hash, GetName(playerid));
-	mysql_query(Database, query);
+	mysql_format(sqlConnection, query, sizeof(query), "UPDATE `players` SET `Password` = '%e' WHERE `Username` = '%e' LIMIT 1", hash, GetName(playerid));
+	mysql_query(sqlConnection, query);
 	SendClientMessage(playerid, -1, "You have successfully changed your password.");
 	return true;
 }
@@ -176,13 +178,14 @@ Function:KickPlayer(playerid)
 Function:SavePlayerToDB(playerid)
 {
 	new query[256];
-	mysql_format(Database, query, sizeof(query), "UPDATE `players` SET `Cash` = '%i', `Kills` = '%i', `Deaths` = '%i', `AdminLevel` = '%i' WHERE `ID` = '%i' LIMIT 1",
+	mysql_format(sqlConnection, query, sizeof(query), "UPDATE `players` SET `Cash` = '%i', `Kills` = '%i', `Deaths` = '%i', `AdminLevel` = '%i', `AccessLevel` = '%i' WHERE `ID` = '%i' LIMIT 1",
 		PlayerInfo[playerid][user_cash],
 		PlayerInfo[playerid][user_kills],
 		PlayerInfo[playerid][user_deaths],
 		PlayerInfo[playerid][user_admin],
+		PlayerInfo[playerid][user_accesslvl],
 		PlayerInfo[playerid][user_id]);
-	mysql_query(Database, query);
+	mysql_query(sqlConnection, query);
 	return true;
 }
 
