@@ -39,6 +39,7 @@
 #include "assets/anticheat/anticheat.bsa"
 
 /* SERVER CONFIGURATION */
+#include "assets/config/mysql.bsa"
 #include "assets/config/svrconfig.bsa"
 
 /* SERVER MAIN FILES */
@@ -46,55 +47,69 @@
 #include "assets/server/defvarenu.bsa"
 #include "assets/server/discord.bsa"
 #include "assets/server/functions.bsa"
+//#include "assets/server/mapswitch.bsa"
 #include "assets/server/textdraws.bsa"
 
 main( ) { }
 
+public OnPlayerRequestDownload(playerid, type, crc)
+{
+	if(!IsPlayerConnected(playerid)) return false;
+    new filename[64], filefound, final_url[256];
+                
+    if(type == DOWNLOAD_REQUEST_TEXTURE_FILE) filefound = FindTextureFileNameFromCRC(crc, filename, sizeof(filename));
+    else if(type == DOWNLOAD_REQUEST_MODEL_FILE) filefound = FindModelFileNameFromCRC(crc, filename, sizeof(filename));    
+	if(filefound)
+	{
+		format(final_url, sizeof(final_url), "%s/%s", SERVER_DOWNLOAD, filename);
+		RedirectDownload(playerid, final_url);
+	}
+	return true;
+}
+
+public OnPlayerFinishedDownloading(playerid, virtualworld)
+{
+	SendSuccessMessage(playerid, "You have successfully downloadeds custom models..");
+    return true;
+}
+
 public OnGameModeInit()
 {
-	SendRconCommand("hostname "SVR_NAME"");
-    SendRconCommand("rcon_password "SVR_RCON"");
-    SendRconCommand("weburl "SVR_WEBSITE"");
-    SendRconCommand("mapname "SVR_LOCATION"");
-    SendRconCommand("language "SVR_LANGUAGE"");
-    SendRconCommand("password "SVR_PASSWORD"");
-	SetGameModeText(SVR_GMTEXT);
-
-	EnableStuntBonusForAll(0);
-	DisableInteriorEnterExits();
-	UsePlayerPedAnims();
-
-	Database = mysql_connect(MYSQL_HOSTNAME, MYSQL_USERNAME, MYSQL_PASSWORD, MYSQL_DATABASE);
-	if(Database == MYSQL_INVALID_HANDLE || mysql_errno(Database) != 0)
+	new MySQLOpt:reconnect = mysql_init_options();
+	mysql_set_option(reconnect, AUTO_RECONNECT, true);
+    
+	sqlConnection = mysql_connect(MYSQL_HOSTNAME, MYSQL_USERNAME, MYSQL_PASSWORD, MYSQL_DATABASE);
+	if(sqlConnection == MYSQL_INVALID_HANDLE || mysql_errno(sqlConnection) != 0)
 	{
 		print("BSA Local: MySQL Connection failed, shutting the server down!");
 		SendRconCommand("exit");
 		return true;
 	}
-
+	
 	mysql_log(ALL);
-	//DiscordInit();
+	AntiDeAMX();
 	print("BSA Local: MySQL Connection was successful.");
 	return true;
 }
 
 public OnGameModeExit()
 {
+	mysql_close(sqlConnection);
 	return true;
 }
 
 public OnPlayerConnect(playerid)
 {
 	new string[256], country[30];
+
 	DefaultValues(playerid);
+	CheckAccount(playerid);
 
 	GetPlayerCountry(playerid, country, sizeof(country));
 	format(string, sizeof(string), "Welcome to {3498db}Battlefield: San Andreas {FFFFFF}[Version "SVR_VERSION" | "SVR_WEBSITE"]");
 	SendClientMessage(playerid, COLOR_WHITE, string);
 	format(string, sizeof(string), "BSA Local: {FFFFFF}%s{AFAFAF} has joined the server. (Country: {FFFFFF}%s{AFAFAF})", GetName(playerid), country);
 	SendClientMessageToAll(COLOR_GREY, string);
-
-	CheckAccount(playerid);
 
 	PlayAudioStreamForPlayer(playerid, "https://iv.digital/videos/backup.mp3");
 
@@ -117,7 +132,7 @@ public OnPlayerDisconnect(playerid, reason)
 	DefaultValues(playerid);
 	KillTextdraws(playerid);
 
-	format(string, sizeof(string), "BSA Local: %s has left the server. (Reason: %s)", GetName(playerid), szDisconnectReason[reason]);
+	format(string, sizeof(string), "BSA Local: {FFFFFF}%s{AFAFAF} has left the server. (Reason: %s)", GetName(playerid), szDisconnectReason[reason]);
 	SendClientMessageToAll(COLOR_GREY, string);
 	return true;
 }
@@ -158,10 +173,20 @@ public OnPlayerText(playerid, text[])
 	return false;
 }
 
-public OnPlayerFinishedDownloading(playerid, virtualworld)
+public OnQueryError(errorid, const error[], const callback[], const query[], MySQL:handle)
 {
-	SendSuccessMessage(playerid, "You have successfully downloaded the custom models.");
-    return true;
+	switch(errorid)
+	{
+		case CR_SERVER_GONE_ERROR:
+		{
+			printf("Lost connection to server");
+		}
+		case ER_SYNTAX_ERROR:
+		{
+			printf("Something is wrong in your syntax, query: %s",query);
+		}
+	}
+	return true;
 }
 
 Dialog:DIALOG_REGISTER(playerid, response, listitem, inputtext[])
@@ -180,8 +205,8 @@ Dialog:DIALOG_LOGIN(playerid, response, listitem, inputtext[])
 	if(response)
 	{
 		new query[300], Password[BCRYPT_HASH_LENGTH];
-		mysql_format(Database, query, sizeof(query), "SELECT `Password` FROM `players` WHERE `Username` = '%e'", GetName(playerid));
-		mysql_query(Database, query);
+		mysql_format(sqlConnection, query, sizeof(query), "SELECT `Password` FROM `players` WHERE `Username` = '%e'", GetName(playerid));
+		mysql_query(sqlConnection, query);
 		cache_get_value_name(0, "Password", Password, BCRYPT_HASH_LENGTH);
 		bcrypt_check(inputtext, Password, "OnPasswordChecked", "d", playerid);
 	}

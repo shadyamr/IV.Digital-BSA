@@ -156,7 +156,8 @@ enum PlayerData
 	user_cash,
 	user_kills,
 	user_deaths,
-	user_admin
+	user_admin,
+	user_accesslvl
 };
 
-new MySQL:Database, bool:LoggedIn[MAX_PLAYERS], PlayerInfo[MAX_PLAYERS][PlayerData], LoginChance[MAX_PLAYERS], InLobby[MAX_PLAYERS];
+new bool:LoggedIn[MAX_PLAYERS], PlayerInfo[MAX_PLAYERS][PlayerData], LoginChance[MAX_PLAYERS], InLobby[MAX_PLAYERS];
