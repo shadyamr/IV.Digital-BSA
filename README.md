@@ -28,3 +28,17 @@ Battlefield: San Andreas is a third-person shooter modification based on Grand T
 ## License
 
 Licensed under the Apache License 2.0. See `LICENSE` for more information.
+
+<!-- DEPENDENCIES -->
+## Dependencies
+
+| Plugins/Includes   | Version           | Link  |
+| :-------------    |:----:   |----:|
+|Bcrypt              | v2.2.3            | [Here](https://github.com/lassir/bcrypt-samp/releases/tag/v2.2.3) |
+|Crash Detector     | v4.19.4             | [Here](https://github.com/Zeex/samp-plugin-crashdetect/releases/tag/v4.19.4) |
+|Discord Connector | v0.2.4            | [Here](https://github.com/maddinat0r/samp-discord-connector/releases/tag/v0.2.4) |
+|I-ZCMD            | v0.2.3.0            | [Here](https://github.com/YashasSamaga/I-ZCMD) |
+|MySQL             | R41-4             | [Here](https://github.com/pBlueG/SA-MP-MySQL/releases/tag/R41-4) |
+|Native Checker    | v1.0              | [Here](https://forum.sa-mp.com/showthread.php?t=249226) |
+|SSCANF            | v2.8.3            | [Here](https://github.com/maddinat0r/sscanf/releases/tag/v2.8.3) |
+|Streamer          | v2.9.4            | [Here](https://github.com/samp-incognito/samp-streamer-plugin/releases/tag/v2.9.4) |

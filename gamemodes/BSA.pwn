@@ -25,7 +25,6 @@
 #include <a_samp>
 #include <a_mysql>
 #include <bcrypt>
-#include <crashdetect>
 #include <discord-connector>
 #include <easyDialog>
 #include <foreach>
