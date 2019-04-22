@@ -35,20 +35,22 @@
 #include <streamer>
 #include <YSI\y_hooks>
 
+new MySQL:g_Sql;
+
 /* ANTI-CHEAT */
-#include "assets/anticheat/anticheat.bsa"
+#include "./includes/anticheat.pwn"
+#include "./includes/anti_bot.pwn"
 
 /* SERVER CONFIGURATION */
-#include "assets/config/mysql.bsa"
-#include "assets/config/svrconfig.bsa"
+#include "./includes/svrconfig.pwn"
 
 /* SERVER MAIN FILES */
-#include "assets/server/commands.bsa"
-#include "assets/server/defvarenu.bsa"
-#include "assets/server/discord.bsa"
-#include "assets/server/functions.bsa"
-//#include "assets/server/mapswitch.bsa"
-#include "assets/server/textdraws.bsa"
+#include "./includes/commands.pwn"
+#include "./includes/defvarenu.pwn"
+#include "./includes/discord.pwn"
+#include "./includes/functions.pwn"
+//#include "./includes/mapswitch.pwn"
+#include "./includes/textdraws.pwn"
 
 main( ) { }
 
@@ -78,13 +80,12 @@ public OnGameModeInit()
 	new MySQLOpt:reconnect = mysql_init_options();
 	mysql_set_option(reconnect, AUTO_RECONNECT, true);
     
-	sqlConnection = mysql_connect(MYSQL_HOSTNAME, MYSQL_USERNAME, MYSQL_PASSWORD, MYSQL_DATABASE);
-	if(sqlConnection == MYSQL_INVALID_HANDLE || mysql_errno(sqlConnection) != 0)
-	{
-		print("BSA Local: MySQL Connection failed, shutting the server down!");
-		SendRconCommand("exit");
-		return true;
-	}
+	g_Sql = mysql_connect_file("mysql.ini");
+	
+	print("[MySQL] Connecting to database server...");
+	
+	if( (!mysql_errno(g_Sql)) || (g_Sql != MYSQL_INVALID_HANDLE) ) print("[MySQL] Connection successful.");
+	else printf("[MySQL] Could not connect to database server! Error number: %d", mysql_errno(g_Sql));
 	
 	mysql_log(ALL);
 	AntiDeAMX();
@@ -94,7 +95,7 @@ public OnGameModeInit()
 
 public OnGameModeExit()
 {
-	mysql_close(sqlConnection);
+	mysql_close(g_Sql);
 	return true;
 }
 
@@ -205,8 +206,8 @@ Dialog:DIALOG_LOGIN(playerid, response, listitem, inputtext[])
 	if(response)
 	{
 		new query[300], Password[BCRYPT_HASH_LENGTH];
-		mysql_format(sqlConnection, query, sizeof(query), "SELECT `Password` FROM `players` WHERE `Username` = '%e'", GetName(playerid));
-		mysql_query(sqlConnection, query);
+		mysql_format(g_Sql, query, sizeof(query), "SELECT `Password` FROM `players` WHERE `Username` = '%e'", GetName(playerid));
+		mysql_query(g_Sql, query);
 		cache_get_value_name(0, "Password", Password, BCRYPT_HASH_LENGTH);
 		bcrypt_check(inputtext, Password, "OnPasswordChecked", "d", playerid);
 	}

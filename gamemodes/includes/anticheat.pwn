@@ -23,5 +23,3 @@ AntiDeAMX()
     };
     #pragma unused a
 }
-
-#include "assets\anticheat\anti_bot.bsa"
